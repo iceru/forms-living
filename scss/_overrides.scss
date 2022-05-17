@@ -1,0 +1,55 @@
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+.container {
+    max-width: 90%;
+    padding-bottom: 160px;
+}
+
+.container-fluid {
+    padding-bottom: 160px;
+}
+
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    &.btn-primary {
+        background: $primary;
+        border: none;
+        color: white;
+    }
+
+    &.btn-outline-primary {
+        background: white;
+        border: none;
+        
+        span {
+            background: linear-gradient(109.12deg, #A6E1B7 0%, #8ACCA1 54.5%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+
+    &.btn-outline-secondary {
+        background: white;
+        border-color: $secondary;
+        color: $secondary;
+
+        &:hover {
+            background-color: $secondary;
+            color: white;
+        }
+    }
+}

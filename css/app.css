@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500;600&family=Questrial&display=swap");
+/* BREAKPOINTS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 90%;
+  padding-bottom: 160px;
+}
+
+.container-fluid {
+  padding-bottom: 160px;
+}
+
+.btn {
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+}
+
+.btn.btn-primary {
+  background: linear-gradient(109.12deg, #A6E1B7 0%, #8ACCA1 54.5%);
+  border: none;
+  color: white;
+}
+
+.btn.btn-outline-primary {
+  background: white;
+  border: none;
+}
+
+.btn.btn-outline-primary span {
+  background: linear-gradient(109.12deg, #A6E1B7 0%, #8ACCA1 54.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn.btn-outline-secondary {
+  background: white;
+  border-color: #A47449;
+  color: #A47449;
+}
+
+.btn.btn-outline-secondary:hover {
+  background-color: #A47449;
+  color: white;
+}
+
+.subtitle {
+  text-align: center;
+  color: #A47449;
+  margin-bottom: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.navbar {
+  padding: 2rem 0;
+}
+
+.navbar .container {
+  padding-bottom: 0;
+}
+
+.navbar .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .menu ul li {
+  padding: .5rem 1.5rem;
+  color: #B8BABC;
+}
+
+.navbar .menu ul li.active {
+  color: #58595B;
+  font-weight: 500;
+}
+
+.footer {
+  color: #B8BABC;
+}
+
+.footer .container {
+  padding-bottom: 1rem;
+}
+
+.footer .container .first-row, .footer .container .second-row {
+  padding: 60px 0;
+}
+
+.footer .container .col-lg-auto {
+  width: 20%;
+}
+
+.footer .container .logo {
+  margin-bottom: 1.5rem;
+}
+
+.footer .container .footer-title {
+  color: #58595B;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer .container p {
+  margin-bottom: 12px;
+}
+
+.footer .container .copyright {
+  color: #58595B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+.footer .container .copyright .links a {
+  margin-left: 4rem;
+}
+
+.cta .container-fluid {
+  padding-right: 0;
+  max-width: 94.2%;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.cta .cta-text .cta-subtitle {
+  margin-bottom: 20px;
+  color: #B8BABC;
+}
+
+.cta .cta-text .cta-title {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.cta .cta-text .cta-desc {
+  margin-bottom: 2.5rem;
+}
+
+.cta .cta-text .actions {
+  margin-bottom: 100px;
+}
+
+.cta .cta-img {
+  position: relative;
+}
+
+.cta .cta-img .text-sliders {
+  position: absolute;
+  bottom: 42px;
+  right: 35px;
+  width: 45%;
+  padding: 2rem;
+  color: white;
+  font-family: 'Montserrat';
+  z-index: 2;
+}
+
+.cta .cta-img .text-sliders:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.cta .sponsor p {
+  margin-bottom: 2.5rem;
+}
+
+.cta .sponsor .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta .sponsor .logos .item {
+  margin-right: 3rem;
+}
+
+.cta .sponsor .logos .item img {
+  max-width: 140px;
+}
+
+.projects .item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.projects .item img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.projects .item .item-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  width: 70%;
+  color: white;
+  padding: 1.5rem;
+  z-index: 2;
+}
+
+.projects .item .item-text .more {
+  color: #8ACCA1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .item .item-text .more i {
+  margin-left: .25rem;
+  margin-top: 1.2px;
+}
+
+.projects .item .item-text:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+.apps {
+  color: white;
+  padding-bottom: 100px;
+}
+
+.apps .container {
+  position: relative;
+  padding-bottom: 0;
+}
+
+.apps .container::before {
+  content: '';
+  width: 100%;
+  border-radius: 30px;
+  background: linear-gradient(299.53deg, #58595B 54.82%, #8F8F8F 104.36%);
+  height: 88%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.apps .container .ornament {
+  position: absolute;
+  z-index: -1;
+}
+
+.apps .container .ornament.one {
+  right: -15%;
+  top: -19%;
+}
+
+.apps .container .ornament.two {
+  bottom: -40%;
+  left: 22%;
+}
+
+.apps .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4rem;
+}
+
+.apps .apps-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.apps .apps-preview img {
+  width: 100%;
+}
+
+.apps .apps-preview .second {
+  margin-left: -10rem;
+}
+
+.apps h2 {
+  padding-right: 10rem;
+  margin-bottom: 2rem;
+  margin-top: 10%;
+}
+
+.apps p {
+  margin-bottom: 3rem;
+}
+
+.apps .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.apps .logos img {
+  margin-right: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  color: #58595B;
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=app.css.map */
