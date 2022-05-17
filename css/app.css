@@ -69,6 +69,25 @@ a:hover {
   margin-bottom: 3rem;
 }
 
+.more {
+  color: #8ACCA1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.more i {
+  margin-left: .25rem;
+  margin-top: 1.2px;
+}
+
+.questrial {
+  font-family: 'Questrial', sans-serif;
+}
+
 .navbar {
   padding: 2rem 0;
 }
@@ -239,21 +258,6 @@ a:hover {
   z-index: 2;
 }
 
-.projects .item .item-text .more {
-  color: #8ACCA1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.projects .item .item-text .more i {
-  margin-left: .25rem;
-  margin-top: 1.2px;
-}
-
 .projects .item .item-text:before {
   content: '';
   position: absolute;
@@ -266,6 +270,153 @@ a:hover {
   background: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
+}
+
+.sliders {
+  padding-bottom: 160px;
+}
+
+.sliders .slider-item {
+  position: relative;
+}
+
+.sliders .slider-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  height: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.sliders .slider-item .slider-img {
+  position: relative;
+}
+
+.sliders .slider-item .slider-content {
+  position: absolute;
+  z-index: 4;
+  bottom: 0;
+  width: 50vw;
+  left: 50%;
+  top: 50%;
+  height: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sliders .slider-item .slider-content .desc {
+  position: relative;
+  padding: 2rem 5rem;
+  text-align: center;
+  color: white;
+}
+
+.sliders .slider-item .slider-content .desc .text {
+  margin-bottom: 2rem;
+  line-height: 2;
+}
+
+.sliders .slider-item .slider-content .desc .more {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sliders .slider-item .slider-content .desc:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+.promotions .items .item {
+  color: white;
+}
+
+.promotions .items .item .cashback {
+  border-radius: 20px;
+  background-color: #D3BBA5;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.promotions .items .item .cashback .text-cashback {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+}
+
+.promotions .items .item .cashback .bg-cashback {
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.promotions .items .item .cashback .promo-date {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 2;
+  padding: 4px 8px;
+}
+
+.promotions .items .item .cashback .promo-date:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+.promotions .items .item .cashback .promo-date:before {
+  border-radius: 100px;
+  z-index: 0;
+}
+
+.promotions .items .item .cashback .promo-date .date-text {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promotions .items .item .cashback .promo-date .date-text i {
+  margin-right: .5rem;
+  margin-bottom: -2px;
 }
 
 .apps {

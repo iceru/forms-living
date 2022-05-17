@@ -8,3 +8,19 @@
     text-align: center;
     margin-bottom: 3rem;
 }
+
+
+.more {
+    color: $primary-normal;
+    display: flex;
+    align-items: center;
+
+    i {
+        margin-left: .25rem;
+        margin-top: 1.2px;
+    }
+}
+
+.questrial {
+    font-family: 'Questrial', sans-serif;
+}
