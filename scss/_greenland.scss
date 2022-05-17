@@ -1,0 +1,55 @@
+.header {
+    background-color: $secondary;
+    color: white;
+    padding-top: 3rem;
+    margin-bottom: 160px;
+
+    .container {
+        padding-bottom: 0;
+    }
+
+    h6 {
+        color: $secondary-light;
+    }
+
+    .search-bar {
+        background-color: white;
+        color: $grey-light;
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        z-index: 2;
+
+        .btn {
+            padding: 1.5rem ;
+        }
+
+    }
+
+    .sliders {
+        margin-top: -2rem;
+        position: relative;
+        z-index: 1;
+        .slider-image {
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.features {
+    .feature {
+        text-align: center;
+
+        img {
+            margin-bottom: 3rem;
+        }
+
+        .more {
+            justify-content: center;
+        }
+    }
+}

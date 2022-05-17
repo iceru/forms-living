@@ -1,5 +1,15 @@
 .navbar {
     padding: 2rem 0;
+    &.secondary {
+        background-color: $secondary;
+        .menu ul li {
+            color: white;
+
+            &.active {
+                color: white;
+            }
+        }
+    }
     .container {
         padding-bottom: 0;
     }

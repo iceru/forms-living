@@ -10,19 +10,34 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.2/font/bootstrap-icons.min.css"
+        integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/app.css">
 
     <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar secondary">
         <div class="container">
             <div class="logo">
-                <img src="/images/logo-forms-living1.png" alt="FORMS Living">
+                <img src="/images/logo-tidar-white.png" alt="Greenland Tidar">
             </div>
             <div class="menu">
                 <ul>
@@ -54,7 +69,7 @@
     </div>
     <div class="header">
         <div class="container">
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-12 col-lg-5">
                     <h6>Selamat datang di Greenland.</h6>
                     <h1>Rumah sudah jadi, istrinya kapan?</h1>
@@ -65,11 +80,14 @@
                         ut, eum ducimus alias excepturi et aspernatur fugit ex consequatur suscipit! Similique autem
                         reiciendis delectus, consequuntur adipisci quis.</p>
 
-                    <button type="button" class="btn btn-primary">Learn MOre</button>
+                    <button type="button" class="btn btn-primary">Learn More</button>
                 </div>
+            </div>
+            <div class="row">
+
                 <div class="col-12">
                     <div class="search-bar">
-                        <div class="row">
+                        <div class="row align-items-center">
                             <div class="col">
                                 <label for="harga" class="form-label">Harga</label>
                                 <select class="form-control" name="harga" id="harga">
@@ -103,15 +121,16 @@
                                 </select>
                             </div>
                             <div class="col">
-                                <button type="button" class="btn btn-primary">Cari Unit</button>
+                                <button type="button" class="btn btn-primary"><i class="bi-search me-1"></i> Cari
+                                    Unit</button>
                             </div>
                         </div>
                     </div>
                     <div class="sliders">
                         <div class="slider-image">
-                            <img src="" alt="">
+                            <img src="/images/img-greenland2.png" class="w-100" alt="">
                         </div>
-                        <div class="slider-text">
+                        <div class="text-sliders">
                             <h5>The Icon Cluster</h5>
                             <p>The Icon mengkombinasikan gaya arsitektur kontemporer dengan alam yang memanjakan
                                 pemiliknya
@@ -123,60 +142,64 @@
         </div>
     </div>
 
-    <div class="clusters">
+    <div class="projects">
         <div class="container">
             <h5 class="subtitle">
                 Cluster
-        </div>
-        <h2 class="title">
-            Hunian di Greenland
-    </div>
-    <div class="row">
-        <div class="col-12 col-lg-6">
-            <div class="cluster">
-                <h4>Green East</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic recusandae provident ullam. Ad
-                    doloribus modi nesciunt, tenetur animi architecto nemo placeat impedit quasi in quae
-                    numquam.
-                    Obcaecati corporis ipsam et.</p>
-                <a href="">Miliki Aku ></a>
+            </h5>
+            <h2 class="title">
+                Hunian di Greenland
+            </h2>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="item">
+                        <img src="/images/img-cluster-large1.png" alt="">
+                        <div class="item-text">
+                            <h4>Green East</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim interdum neque vel
+                                euismod. </p>
+                            <a href="" class="more">Miliki Aku ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="item">
+                        <img src="/images/img-cluster-large2.png" alt="">
+                        <div class="item-text">
+                            <h4>Green West</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim interdum neque vel
+                                euismod. </p>
+                            <a href="" class="more">Miliki Aku ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="item">
+                        <img src="/images/img-cluster-large3.png" alt="">
+                        <div class="item-text">
+                            <h4>The Icon</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim interdum neque vel
+                                euismod. </p>
+                            <a href="" class="more">Miliki Aku ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="item">
+                        <img src="/images/img-cluster-large4.png" alt="">
+                        <div class="item-text">
+                            <h4>The Mainroad</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim interdum neque vel
+                                euismod. </p>
+                            <a href="" class="more">Miliki Aku ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary">Tampilkan Semua</button>
+                </div>
             </div>
         </div>
-        <div class="col-12 col-lg-6">
-            <div class="cluster">
-                <h4>Green West</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic recusandae provident ullam. Ad
-                    doloribus modi nesciunt, tenetur animi architecto nemo placeat impedit quasi in quae
-                    numquam.
-                    Obcaecati corporis ipsam et.</p>
-                <a href="">Miliki Aku ></a>
-            </div>
-        </div>
-        <div class="col-12 col-lg-6">
-            <div class="cluster">
-                <h4>The Icon</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic recusandae provident ullam. Ad
-                    doloribus modi nesciunt, tenetur animi architecto nemo placeat impedit quasi in quae
-                    numquam.
-                    Obcaecati corporis ipsam et.</p>
-                <a href="">Miliki Aku ></a>
-            </div>
-        </div>
-        <div class="col-12 col-lg-6">
-            <div class="cluster">
-                <h4>The Mainroad</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic recusandae provident ullam. Ad
-                    doloribus modi nesciunt, tenetur animi architecto nemo placeat impedit quasi in quae
-                    numquam.
-                    Obcaecati corporis ipsam et.</p>
-                <a href="">Miliki Aku ></a>
-            </div>
-        </div>
-        <div class="col-12">
-            <button type="button" class="btn btn-primary">Tampilkan Semua</button>
-        </div>
-    </div>
-    </div>
     </div>
 
     <div class="facilities">
@@ -196,24 +219,33 @@
                 Nyaman dan aman
             </h2>
             <div class="row">
-                <div class="col-12 col-lg-4">
-                    <img src="" alt="">
+                <div class="col-12 col-lg-4 feature">
+                    <img src="/images/img-gate.png" alt="">
                     <h3>One Gate System</h3>
-                    <p>Keamanan lingkungan perumahan</p>
-                    <a href="">Learn More</a>
+                    <p>Keamanan lingkungan
+                        perumahan lebih terjamin
+                        dengan One Gate System
+                        yang terintegrasi.</p>
+                    <a href="" class="more">Learn More <i class="bi bi-chevron-right"></i></a>
                 </div>
-                <div class="col-12 col-lg-4">
-                    <img src="" alt="">
+                <div class="col-12 col-lg-4 feature">
+                    <img src="/images/img-cctv.png" alt="">
                     <h3>CCTV 24 Hours</h3>
-                    <p>Pelindungan penuh dengan pengawasan CCTV</p>
-                    <a href="">Learn More</a>
+                    <p>Perlindungan penuh dengan pengawasan CCTV dan
+                        penjagaan security selama 24
+                        jam non-stop</p>
+                    <a href="" class="more">Learn More <i class="bi bi-chevron-right"></i></a>
 
                 </div>
-                <div class="col-12 col-lg-4">
-                    <img src="" alt="">
+                <div class="col-12 col-lg-4 feature">
+                    <img src="/images/img-after-sales.png" alt="">
                     <h3>Layanan After Sales</h3>
-                    <p>Meningkatkan kenyamanan keluarga</p>
-                    <a href="">Learn More</a>
+                    <p>Meningkatkan kenyamanan
+                        keluarga besar Greenland
+                        dengan manajemen after
+                        sales bintang lima.
+                    </p>
+                    <a href="" class="more">Learn More <i class="bi bi-chevron-right"></i></a>
                 </div>
             </div>
         </div>
@@ -229,17 +261,102 @@
             </h2>
             <div class="row items">
                 <div class="col-12 col-lg-4">
-                    <div class="cashback">
-                        <h5>Cashback</h5>
-                        <h3>15%</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                    </div>
-                    <div class="qr">
-                        <div class="qr-img">
-                            <img src="" alt="">
+                    <div class="item brown">
+                        <div class="cashback">
+                            <div class="text-cashback">
+                                <h5>Cashback</h5>
+                                <h1>15%</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+
+                            <div class="bg-cashback">
+                                <img src="/images/img-promo.png" alt="">
+                            </div>
+
+                            <div class="promo-date">
+                                <div class="date-text questrial">
+                                    <i class="bi-clock"></i>
+                                    20 Mei 2022
+                                </div>
+                            </div>
                         </div>
-                        <p>Scan QR Code or Copy the code</p>
-                        <button type="button" class="btn btn-transparent-white">Salin Kode</button>
+                        <div class="line">
+                            <img src="/images/line-coupon.png" alt="">
+                        </div>
+                        <div class="qr">
+                            <div class="qr-img">
+                                <img src="/images/qr-code.png" alt="">
+                            </div>
+                            <p>Scan QR Code or Copy the code</p>
+                            <button type="button" class="btn btn-white">Salin Kode <img class="ms-2"
+                                    src="/images/ic-copy.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="item grey">
+                        <div class="cashback">
+                            <div class="text-cashback">
+                                <h5>Cashback</h5>
+                                <h1>20%</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+
+                            <div class="bg-cashback">
+                                <img src="/images/img-promo.png" alt="">
+                            </div>
+
+                            <div class="promo-date">
+                                <div class="date-text questrial">
+                                    <i class="bi-clock"></i>
+                                    20 Mei 2022
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <img src="/images/line-coupon.png" alt="">
+                        </div>
+                        <div class="qr">
+                            <div class="qr-img">
+                                <img src="/images/qr-code.png" alt="">
+                            </div>
+                            <p>Scan QR Code or Copy the code</p>
+                            <button type="button" class="btn btn-white">Salin Kode <img class="ms-2"
+                                    src="/images/ic-copy.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="item green">
+                        <div class="cashback">
+                            <div class="text-cashback">
+                                <h5>Cashback</h5>
+                                <h1>20%</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+
+                            <div class="bg-cashback">
+                                <img src="/images/img-promo.png" alt="">
+                            </div>
+
+                            <div class="promo-date">
+                                <div class="date-text questrial">
+                                    <i class="bi-clock"></i>
+                                    20 Mei 2022
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <img src="/images/line-coupon.png" alt="">
+                        </div>
+                        <div class="qr">
+                            <div class="qr-img">
+                                <img src="/images/qr-code.png" alt="">
+                            </div>
+                            <p>Scan QR Code or Copy the code</p>
+                            <button type="button" class="btn btn-white">Salin Kode <img class="ms-2"
+                                    src="/images/ic-copy.png" alt=""></button>
+                        </div>
                     </div>
                 </div>
             </div>

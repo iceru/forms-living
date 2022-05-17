@@ -11,6 +11,10 @@ a {
     font-weight: 600;
 }
 
+h1 {
+    line-height: 1.5;
+}
+
 .container {
     max-width: 90%;
     padding-bottom: 160px;
@@ -24,6 +28,7 @@ a {
     border-radius: 10px;
     font-weight: 600;
     padding: 1rem 1.5rem;
+    align-items: center;
     &.btn-primary {
         background: $primary;
         border: none;
@@ -51,5 +56,11 @@ a {
             background-color: $secondary;
             color: white;
         }
+    }
+
+    &.btn-white {
+        background: rgba(255, 255, 255, 0.3);
+        border-color: transparent;
+        color: white;
     }
 }
