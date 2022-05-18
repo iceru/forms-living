@@ -724,6 +724,78 @@ h1 {
   width: 430px;
 }
 
+.cluster {
+  width: 90%;
+  margin: auto;
+}
+
+.map {
+  padding: 4rem 12rem;
+  background-color: #D3BBA5;
+  border-radius: 20px;
+  margin: 4rem 0;
+  position: relative;
+}
+
+.map img {
+  width: 100%;
+}
+
+.map .control {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.map .control .zoom {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.map .control .in {
+  margin-bottom: .75rem;
+}
+
+.mainroad {
+  margin: 0 -2rem;
+}
+
+.mainroad .item {
+  margin-bottom: 4rem;
+  padding: 0 2rem;
+}
+
+.mainroad .item .item-image img {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.mainroad .item .type {
+  margin-bottom: 1rem;
+}
+
+.mainroad .item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainroad .item .info .info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+}
+
+.mainroad .item .info .info-item img {
+  margin-right: .5rem;
+}
+
 * {
   margin: 0;
   padding: 0;

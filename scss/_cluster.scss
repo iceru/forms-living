@@ -1,0 +1,65 @@
+.cluster {
+    width: 90%;
+    margin: auto;
+}
+
+.map {
+    padding: 4rem 12rem;
+    background-color: $secondary-light;
+    border-radius: 20px;
+    margin: 4rem 0;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    .control {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+
+        .zoom {
+            background-color: rgba($color: #000000, $alpha: 0.3);
+            border-radius: 10px;
+            padding: 1rem;
+        }
+
+        .in {
+            margin-bottom: .75rem;
+        }
+    }
+}
+
+.mainroad {
+    margin: 0 -2rem;
+
+    .item {
+        margin-bottom: 4rem;
+        padding: 0 2rem;
+
+        .item-image img {
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+
+        .type {
+            margin-bottom: 1rem;
+        }
+
+        .info {
+            display: flex;
+
+            .info-item {
+                display: flex;
+                align-items: center;
+                margin-right: 1rem;
+
+                img {
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+}
