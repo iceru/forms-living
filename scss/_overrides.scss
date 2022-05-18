@@ -1,13 +1,25 @@
 a {
     text-decoration: none;
     color: inherit;
+
     &:hover {
         text-decoration: none;
         color: inherit;
     }
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
 }
 
@@ -29,6 +41,7 @@ h1 {
     font-weight: 600;
     padding: 1rem 1.5rem;
     align-items: center;
+
     &.btn-primary {
         background: $primary;
         border: none;
@@ -38,7 +51,7 @@ h1 {
     &.btn-outline-primary {
         background: white;
         border: none;
-        
+
         span {
             background: linear-gradient(109.12deg, #A6E1B7 0%, #8ACCA1 54.5%);
             -webkit-background-clip: text;
@@ -63,4 +76,20 @@ h1 {
         border-color: transparent;
         color: white;
     }
+
+    &.btn-outline-white {
+        background-color: transparent;
+        border-color: white;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: $secondary;
+        }
+    }
+}
+
+.form-control {
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
 }

@@ -48,3 +48,15 @@
         backdrop-filter: blur(10px);
     }
 }
+
+.container-fluid.left-side {
+    padding-right: 0;
+    max-width: 94.2%;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.ornament {
+    position: absolute;
+    z-index: -1;
+}

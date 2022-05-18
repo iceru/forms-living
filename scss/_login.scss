@@ -1,0 +1,53 @@
+.login {
+    overflow: hidden;
+
+    .login-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        position: relative;
+
+        .logo {
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            text-align: left;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-group {
+            min-width: 35vw;
+        }
+
+        h5 {
+            margin-bottom: 1rem;
+        }
+
+        .ornament {
+            &.one {
+                top: -25%;
+                right: -25%;
+
+                img {
+                    width: 430px;
+                }
+            }
+
+            &.two {
+                bottom: -25%;
+                left: -25%;
+
+                img {
+                    width: 430px;
+                }
+            }
+        }
+    }
+}

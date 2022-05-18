@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500;600&family=Questrial&display=swap");
 /* BREAKPOINTS */
+.primary-color {
+  color: #8ACCA1;
+}
+
+.light-grey-color {
+  color: #B8BABC;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -10,7 +18,18 @@ a:hover {
   color: inherit;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
 }
 
@@ -71,6 +90,22 @@ h1 {
   color: white;
 }
 
+.btn.btn-outline-white {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+
+.btn.btn-outline-white:hover {
+  background-color: white;
+  color: #A47449;
+}
+
+.form-control {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+}
+
 .subtitle {
   text-align: center;
   color: #A47449;
@@ -124,6 +159,18 @@ h1 {
   background: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+}
+
+.container-fluid.left-side {
+  padding-right: 0;
+  max-width: 94.2%;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.ornament {
+  position: absolute;
+  z-index: -1;
 }
 
 .navbar {
@@ -211,13 +258,6 @@ h1 {
 
 .footer .container .copyright .links a {
   margin-left: 4rem;
-}
-
-.cta .container-fluid {
-  padding-right: 0;
-  max-width: 94.2%;
-  margin-left: auto;
-  margin-right: 1rem;
 }
 
 .cta .cta-text .cta-subtitle {
@@ -375,11 +415,13 @@ h1 {
   color: white;
 }
 
-.promotions .items .item.grey .cashback, .promotions .items .item.grey .qr {
+.promotions .items .item.grey .cashback,
+.promotions .items .item.grey .qr {
   background-color: #B8BABC;
 }
 
-.promotions .items .item.green .cashback, .promotions .items .item.green .qr {
+.promotions .items .item.green .cashback,
+.promotions .items .item.green .qr {
   background: linear-gradient(109.12deg, #A6E1B7 0%, #8ACCA1 54.5%);
 }
 
@@ -483,11 +525,6 @@ h1 {
   height: 88%;
   position: absolute;
   bottom: 0;
-  z-index: -1;
-}
-
-.apps .container .ornament {
-  position: absolute;
   z-index: -1;
 }
 
@@ -599,6 +636,94 @@ h1 {
           justify-content: center;
 }
 
+.facilities .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.facilities .items .item {
+  margin-right: 2rem;
+}
+
+.facilities .items .item img {
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  max-width: 360px;
+}
+
+.facilities .items .item .text {
+  font-size: 1.25rem;
+}
+
+.facilities .items::-webkit-scrollbar {
+  display: none;
+}
+
+.login {
+  overflow: hidden;
+}
+
+.login .login-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.login .login-content .logo {
+  margin-bottom: 2rem;
+}
+
+.login .login-content .form-group {
+  text-align: left;
+}
+
+.login .login-content .form-label {
+  font-weight: bold;
+}
+
+.login .login-content .form-group {
+  min-width: 35vw;
+}
+
+.login .login-content h5 {
+  margin-bottom: 1rem;
+}
+
+.login .login-content .ornament.one {
+  top: -25%;
+  right: -25%;
+}
+
+.login .login-content .ornament.one img {
+  width: 430px;
+}
+
+.login .login-content .ornament.two {
+  bottom: -25%;
+  left: -25%;
+}
+
+.login .login-content .ornament.two img {
+  width: 430px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -606,7 +731,8 @@ h1 {
           box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: 'Poppins', sans-serif;
   color: #58595B;
   overflow-x: hidden;

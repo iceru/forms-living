@@ -23,7 +23,7 @@
         z-index: 2;
 
         .btn {
-            padding: 1.5rem ;
+            padding: 1.5rem;
         }
 
     }
@@ -32,6 +32,7 @@
         margin-top: -2rem;
         position: relative;
         z-index: 1;
+
         .slider-image {
             img {
                 border-radius: 20px;
@@ -51,5 +52,33 @@
         .more {
             justify-content: center;
         }
+    }
+}
+
+.facilities {
+    .items {
+        display: flex;
+        overflow: auto;
+
+        .item {
+            margin-right: 2rem;
+
+            img {
+                margin-bottom: 1rem;
+                border-radius: 20px;
+                max-width: 360px;
+            }
+
+            .text {
+                font-size: 1.25rem;
+            }
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 }
