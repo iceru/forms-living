@@ -49,10 +49,11 @@ h1 {
 .btn {
   border-radius: 10px;
   font-weight: 600;
-  padding: 1rem 1.5rem;
+  padding: 1rem 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 20px;
 }
 
 .btn.btn-primary {
@@ -101,9 +102,41 @@ h1 {
   color: #A47449;
 }
 
+.btn.btn-grey {
+  background-color: #B8BABC;
+  border-color: transparent;
+  color: white;
+  font-weight: 400;
+}
+
 .form-control {
   padding: 1rem 1.5rem;
   border-radius: 10px;
+}
+
+.nav-tabs {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  color: #B8BABC;
+  padding: 0;
+  margin: .5rem 1rem;
+  isolation: unset;
+  border: none;
+  padding-bottom: 4px;
+}
+
+.nav-tabs .nav-link:hover {
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 2px solid #58595B;
 }
 
 .subtitle {
@@ -171,6 +204,20 @@ h1 {
 .ornament {
   position: absolute;
   z-index: -1;
+}
+
+.btn-groups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4rem;
+}
+
+.btn-groups > .btn {
+  margin: 0 1rem;
 }
 
 .navbar {
@@ -762,8 +809,16 @@ h1 {
 }
 
 .mainroad .item {
+  margin: 0 1rem;
   margin-bottom: 4rem;
-  padding: 0 2rem;
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.mainroad .item:hover, .mainroad .item:focus {
+  border: 1px solid #A47449;
 }
 
 .mainroad .item .item-image img {
@@ -794,6 +849,204 @@ h1 {
 
 .mainroad .item .info .info-item img {
   margin-right: .5rem;
+}
+
+.gallery {
+  margin-bottom: 2rem;
+}
+
+.gallery .image-left img {
+  max-height: 600px;
+  border-radius: 20px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery .image-right img {
+  max-height: 180px;
+  border-radius: 20px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery .image-right img:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.gallery .image-right .see-more {
+  position: relative;
+  display: block;
+}
+
+.gallery .image-right .see-more:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+.gallery .image-right .see-more:before {
+  z-index: 2;
+  content: 'Lihat semua foto';
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Questrial';
+  font-size: 20px;
+}
+
+.small-info {
+  padding: 10px 15px;
+  background-color: #F9F3EE;
+  color: #A47449;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.small-info img {
+  margin-right: .5rem;
+}
+
+.spesification .img-denah {
+  text-align: center;
+}
+
+.spesification .spec-table {
+  width: 60%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.spesification .spec-table .table tr td:first-child {
+  color: #B8BABC;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3.5rem 0 4rem;
+}
+
+.steps .step {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  border-radius: 50%;
+  color: #B8BABC;
+  border: 2px solid #B8BABC;
+  margin: 0 1.5rem;
+  position: relative;
+  font-size: 20px;
+}
+
+.steps .step:after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: calc(4rem - 12px);
+  top: 50%;
+  left: 100%;
+  background-color: #B8BABC;
+}
+
+.steps .step.last:after {
+  width: 0;
+}
+
+.steps .step.active {
+  color: #A47449;
+  border: 2px solid #A47449;
+}
+
+.steps .step.done {
+  color: white;
+  background-color: #A47449;
+  border-color: #A47449;
+}
+
+.steps .step.done:after {
+  background-color: #A47449;
+}
+
+.choose-cluster .item {
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+
+.choose-cluster .item:hover, .choose-cluster .item:focus {
+  border: 1px solid #A47449;
+}
+
+.choose-cluster .item .item-image {
+  margin-bottom: 1rem;
+}
+
+.choose-cluster .item .item-image img {
+  width: 100%;
+  height: 240px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.choose-cluster .item .item-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.choose-cluster .item .item-sub {
+  color: #B8BABC;
+}
+
+.virtual-image {
+  position: relative;
+}
+
+.virtual-image .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 * {
