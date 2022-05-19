@@ -1355,6 +1355,50 @@ h1 {
   padding-top: 4rem;
 }
 
+.summary {
+  margin-bottom: 4rem;
+}
+
+.summary .col-4 p {
+  color: #B8BABC;
+}
+
+.summary hr {
+  margin: 2rem 0;
+}
+
+.summary .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.summary .detail a {
+  margin-left: 1rem;
+  color: #A47449;
+  font-weight: bold;
+}
+
+.summary .promo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #8ACCA1;
+}
+
+.summary .promo img {
+  margin-right: .5rem;
+}
+
+.summary .promo p {
+  margin-bottom: 0;
+}
+
 .virtual-image {
   position: relative;
 }

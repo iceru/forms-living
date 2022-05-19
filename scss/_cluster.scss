@@ -476,3 +476,43 @@
     justify-content: space-between;
     padding-top: 4rem;
 }
+
+.summary {
+    margin-bottom: 4rem;
+
+    .col-4 {
+        p {
+            color: $grey-light;
+        }
+    }
+
+    hr {
+        margin: 2rem 0;
+    }
+
+    .detail {
+        display: flex;
+
+        a {
+            margin-left: 1rem;
+            color: $secondary;
+            font-weight: bold;
+        }
+    }
+
+    .promo {
+        display: inline-flex;
+        align-items: center;
+        padding: .5rem 1rem;
+        border-radius: 10px;
+        border: 1px solid $primary-normal;
+
+        img {
+            margin-right: .5rem;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
