@@ -115,9 +115,17 @@ h1 {
   font-weight: 400;
 }
 
-.form-control {
+.form-control,
+.form-select {
   padding: 1rem 1.5rem;
   border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(138, 204, 161, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(138, 204, 161, 0.25);
+  border-color: #8ACCA1;
 }
 
 .nav-tabs {
@@ -1188,6 +1196,163 @@ h1 {
 .mod-items .item .btn {
   font-weight: 400;
   width: 180px;
+}
+
+.simulation-price .collapse-item {
+  margin-bottom: 1.5rem;
+}
+
+.simulation-price .collapse-item .card-shadow {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.simulation-price .collapse-item .form-check:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.simulation-price .form-group {
+  position: relative;
+}
+
+.simulation-price .form-group .label-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  border: 1px solid #B8BABC;
+  padding: 0 1.5rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.simulation-price .form-group .form-control {
+  border: 0;
+  padding-left: 130px;
+}
+
+.price-total {
+  text-align: center;
+  background-color: #F7FFF8;
+  border: 1px dashed #8ACCA1;
+  padding: 50px 0;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+
+.price-total p {
+  margin-bottom: 1rem;
+}
+
+.form-order .form-group {
+  margin-bottom: 2rem;
+}
+
+.form-order .form-group .form-label {
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+}
+
+.form-order .btn-form {
+  font-weight: 400;
+  font-size: 1rem;
+  border: 1px solid #B8BABC;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-order .btn-form .promo-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-order .btn-form .promo-text img {
+  margin-right: .5rem;
+}
+
+.promo-modal .promo-title {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.promo-modal .promo-input {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.promo-modal .promo-input .form-control {
+  padding: 1.5rem 2rem;
+}
+
+.promo-modal .promo-input .btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #A47449;
+}
+
+.promo-modal .promo-item {
+  padding: 1.5rem;
+  border: 1px solid #B8BABC;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.promo-modal .promo-item .promo-icon {
+  margin-right: 1.5rem;
+}
+
+.promo-modal .promo-item.active {
+  border-color: #8ACCA1;
+}
+
+.promo-modal .promo-item .promo-text h6 {
+  margin-bottom: 10px;
+}
+
+.promo-modal .promo-item .promo-text p {
+  margin-bottom: 0;
+  color: #B8BABC;
+}
+
+.promo-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 4rem;
 }
 
 .virtual-image {
