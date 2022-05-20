@@ -59,7 +59,7 @@
     .image-sliders {
         position: relative;
 
-        .text-sliders {
+        .text-blur-bg {
             left: 4rem;
             right: auto;
             text-align: center;
@@ -181,7 +181,7 @@
     .image-container {
         position: relative;
 
-        .text-sliders {
+        .text-blur-bg {
             width: 32%;
             bottom: 4rem;
             right: 4rem;
@@ -201,7 +201,7 @@
         }
 
         &.left-text {
-            .text-sliders {
+            .text-blur-bg {
                 padding: 3rem 4rem;
                 left: 4rem;
                 right: auto;
@@ -230,7 +230,7 @@
                 border-radius: 20px;
             }
 
-            .text-sliders {
+            .text-blur-bg {
                 width: 90%;
                 left: 50%;
                 bottom: 1.5rem;

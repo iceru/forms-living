@@ -91,6 +91,15 @@
             }
         }
     }
+
+    .action {
+        display: flex;
+        align-items: center;
+
+        .btn {
+            margin-right: 2.5rem;
+        }
+    }
 }
 
 .footer {
