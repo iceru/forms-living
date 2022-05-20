@@ -516,3 +516,39 @@
         }
     }
 }
+
+.disclaimer {
+    .section:not(:last-child) {
+        margin-bottom: 2.5rem;
+    }
+
+    ol {
+        padding: 0;
+        margin: 0;
+        padding-left: 1rem;
+    }
+}
+
+.congratulation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+
+    .logo {
+        margin-bottom: 5rem;
+    }
+
+    .icon-check {
+        margin-bottom: 3rem;
+    }
+
+    h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 5rem;
+    }
+}
