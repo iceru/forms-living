@@ -1131,6 +1131,94 @@ h1 {
   margin-bottom: .75rem;
 }
 
+.map .bg-black {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: none;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.map .bg-black.active {
+  display: block;
+}
+
+.map .popup {
+  display: none;
+  height: 85%;
+  width: 35%;
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: white;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.map .popup .popup-close {
+  position: absolute;
+  background-color: white;
+  top: -2rem;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.map .popup .popup-close img {
+  width: 8px;
+  height: 8px;
+}
+
+.map .popup .popup-image img {
+  height: 147px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.map .popup.active {
+  display: block;
+}
+
+.map .popup .popup-content {
+  padding: 1.5rem 40px;
+}
+
+.map .popup .popup-content .popup-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.map .popup .popup-content .text-left,
+.map .popup .popup-content .text-right {
+  margin-bottom: 1rem;
+}
+
+.map .popup .popup-content .text-left {
+  color: #B8BABC;
+}
+
 .mainroad {
   margin: 0 -2rem;
 }
@@ -1719,6 +1807,74 @@ h1 {
   left: 0;
   top: 0;
   z-index: -1;
+}
+
+.virtual-image .bg img {
+  max-height: 98vh;
+}
+
+.virtual-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+}
+
+.virtual-content h2 {
+  margin-bottom: 2rem;
+}
+
+.virtual-content .items {
+  width: 80%;
+}
+
+.virtual-content .items .item {
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.virtual-content .items .item.active, .virtual-content .items .item:hover {
+  border: 1px solid #A47449;
+}
+
+.virtual-content .items .item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.virtual-content .items .item .item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.virtual-content .items .item .item-text p {
+  margin-bottom: .5rem;
 }
 
 * {
