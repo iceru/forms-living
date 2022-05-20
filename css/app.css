@@ -302,11 +302,15 @@ h1 {
   background-color: #A47449;
 }
 
+.navbar.secondary .menu .dropdown-toggle.show {
+  color: white;
+}
+
 .navbar.secondary .menu ul li {
   color: white;
 }
 
-.navbar.secondary .menu ul li.active {
+.navbar.secondary .menu ul li.active, .navbar.secondary .menu ul li:hover, .navbar.secondary .menu ul li:focus {
   color: white;
 }
 

@@ -4,10 +4,16 @@
     &.secondary {
         background-color: $secondary;
 
+        .menu .dropdown-toggle.show {
+            color: white;
+        }
+
         .menu ul li {
             color: white;
 
-            &.active {
+            &.active,
+            &:hover,
+            &:focus {
                 color: white;
             }
         }
