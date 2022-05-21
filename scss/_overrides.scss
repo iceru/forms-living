@@ -27,6 +27,24 @@ h1 {
     line-height: 1.5;
 }
 
+@include breakpoint(largeDesktop) {
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
 .container {
     max-width: 90%;
     padding-bottom: 160px;
@@ -190,6 +208,35 @@ h1 {
         text-align: center;
         margin-bottom: 2rem;
     }
+
+    @include breakpoint(mobileonly) {
+        .modal-content {
+            padding: 1rem;
+        }
+
+        .modal-body {
+            padding: 1rem 0;
+        }
+
+        &.bottomsheet {
+            .modal-dialog {
+                position: absolute;
+                bottom: -1rem;
+                width: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0;
+
+
+                .modal-content {
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    min-height: 50vh;
+                }
+            }
+        }
+    }
+
 }
 
 .form-radio {
@@ -209,12 +256,23 @@ h1 {
                 left: 50%;
                 transform: translate(-50%, -50%);
                 border-radius: 50%;
+
+                @include breakpoint(mobileonly) {
+                    width: 6px;
+                    height: 6px;
+                }
             }
         }
 
         &:focus {
             box-shadow: 0 0 0 0.25rem rgba($color: $primary-normal, $alpha: 0.25);
         }
+    }
+}
+
+@include breakpoint(mobileonly) {
+    .form-check-label {
+        font-size: 12px;
     }
 }
 

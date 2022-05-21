@@ -19,41 +19,115 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar d-none d-lg-block">
         <div class="container">
             <div class="logo">
                 <img src="/images/logo-forms-living1.png" alt="FORMS Living">
             </div>
             <div class="menu">
                 <ul>
-                    <a href="/">
-                        <li class="active">Home</li>
-                    </a>
-                    <li>
-                        Perumahan
+                    <li class="active">
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Perumahan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="/greenland.html">
+                                    <div>
+                                        <img src="/images/logo-tidar-green.png" alt="">
+                                        <p>Greenland</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project2b.png" alt="">
+                                        <p>Project B</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project3b.png" alt="">
+                                        <p>Project C</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project4.png" alt="">
+                                        <p>Project D</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project5.png" alt="">
+                                        <p>Project E</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         Hotel
                     </li>
                     <li>Mall</li>
-                    <a href="">
-                        <li>About Forms</li>
-                    </a>
-                    <a href="">
-                        <li>Contact</li>
-                    </a>
+                    <li>
+                        <a href="">About Forms</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
             <div class="action">
-                <button type="button" class="btn btn-outline-secondary">Login/Register</button>
-                <a href="#">
-                    <img src="" alt="">
-                </a>
+                <a href="/login.html" type="button" class="btn btn-outline-secondary">Login/Register</button>
+                    <a href="#">
+                        <img src="/images/ic-cart.png" alt="">
+                    </a>
+            </div>
+            <div class="icon-bell">
+                <img src="/images/ic-bell.png" alt="">
             </div>
         </div>
     </div>
 
     <div class="cluster">
+        <div class="header-simulation mobile-only">
+            <div class="ornament one">
+                <img src="/images/img-ornament1.png" alt="">
+            </div>
+            <div class="nav-header">
+                <div class="ic-back">
+                    <img src="/images/ic-back-sim.png" alt="">
+                </div>
+                <h2 class="title">
+                    Miliki Unit
+                </h2>
+                <div></div>
+            </div>
+            <div class="steps">
+                <div class="step done">1</div>
+                <div class="step done">2</div>
+                <div class="step done">3</div>
+                <div class="step done">4</div>
+                <div class="step done">5</div>
+                <div class="step active">6</div>
+                <div class="step">7</div>
+                <div class="step last">8</div>
+            </div>
+
+        </div>
         <div class="container">
             <div class="steps">
                 <div class="step done">1</div>
@@ -66,135 +140,137 @@
                 <div class="step last">8</div>
             </div>
             <div>
-                <h2 class="title">
-                    Simulasi Kredit
-                </h2>
 
                 <div class="second-layout">
                     <div class="row">
-                        <div class="col-12 col-lg-4 left-column">
-                            <div class="mod-type">
-                                <div class="type-image">
-                                    <img src="/images/img-cluster.png" alt="">
-                                </div>
-                                <div class="items">
-                                    <div class="type-item">
-                                        <p>Type</p>
-                                        <h5>150</h5>
-                                    </div>
-                                    <div class="type-item">
-                                        <p>Blok</p>
-                                        <h5>A2</h5>
-                                    </div>
-                                    <div class="type-item">
-                                        <p>Cluster</p>
-                                        <h5>The Mainroad</h5>
-                                    </div>
-                                    <div class="type-item">
-                                        <p>Start from</p>
-                                        <h5>Rp. 975,000,000</h5>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-12 order-2 order-lg-1">
+                            <h2 class="title">
+                                Simulasi Kredit
+                            </h2>
                         </div>
-                        <div class="col-12 col-lg-8 right-column">
-                            <div class="simulation-price">
-                                <div class="collapse-item">
-                                    <a class="card-shadow" data-bs-toggle="collapse" href="#bank" role="button"
-                                        aria-expanded="false" aria-controls="bank">
-                                        Pilih Bank
-                                    </a>
-                                    <div class="collapse" id="bank">
-                                        <div class="card card-body">
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input" name="bank" id="bank"
-                                                        value="checkedValue" checked>
-                                                    Bank 1
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input" name="bank" id="bank"
-                                                        value="checkedValue">
-                                                    Bank 2
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-4 form-group">
-                                    <div class="label-text">
-                                        Jumlah
-                                    </div>
-                                    <input type="text" class="form-control card-shadow" name="" id=""
-                                        aria-describedby="helpId" placeholder="">
-                                </div>
-                                <div class="collapse-item">
-                                    <a class="card-shadow" data-bs-toggle="collapse" href="#bunga" role="button"
-                                        aria-expanded="false" aria-controls="bunga">
-                                        Suku Bunga
-                                    </a>
-                                    <div class="collapse" id="bunga">
-                                        <div class="card card-body">
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input" name="suku" id="suku"
-                                                        value="checkedValue" checked>
-                                                    Suku Bunga 1
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input" name="suku" id="suku"
-                                                        value="checkedValue">
-                                                    Suku Bunga 2
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collapse-item">
-                                    <a class="card-shadow" data-bs-toggle="collapse" href="#waktu" role="button"
-                                        aria-expanded="false" aria-controls="waktu">
-                                        Jangka Waktu Peminjaman
-                                    </a>
-                                    <div class="collapse" id="waktu">
-                                        <div class="card card-body">
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input" name="jangka_waktu"
-                                                        id="jangka_waktu" value="checkedValue" checked>
-                                                    Jangka Waktu 1
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input" name="jangka_waktu"
-                                                        id="jangka_waktu" value="checkedValue">
-                                                    Jangka Waktu 2
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-12 col-lg-4 left-column order-1 order-lg-2"">
+                            <div class=" mod-type">
+                            <div class="type-image">
+                                <img src="/images/img-cluster.png" alt="">
                             </div>
-                            <div class="btn-groups">
-                                <button type="button" class="btn btn-primary">Hitung Simulasi</button>
-                            </div>
-                            <div class="price-total">
-                                <p>Perkiraan pembayaran KPR Anda:</p>
-                                <h5>Rp. 16,350,000 / bulan</h5>
+                            <div class="items">
+                                <div class="type-item">
+                                    <p>Type</p>
+                                    <h5>150</h5>
+                                </div>
+                                <div class="type-item">
+                                    <p>Blok</p>
+                                    <h5>A2</h5>
+                                </div>
+                                <div class="type-item">
+                                    <p>Cluster</p>
+                                    <h5>The Mainroad</h5>
+                                </div>
+                                <div class="type-item">
+                                    <p>Start from</p>
+                                    <h5>Rp. 975,000,000</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="btn-groups">
-                    <a href="k-simulation-payment-option.html" type="button" class="btn btn-grey">Kembali</a>
-                    <a href="/k-simulation-order.html" type="button" class="btn btn-primary">Lanjutkan</a>
+                    <div class="col-12 col-lg-8 right-column order-3">
+                        <div class="simulation-price">
+                            <div class="collapse-item">
+                                <a class="card-shadow" data-bs-toggle="collapse" href="#bank" role="button"
+                                    aria-expanded="false" aria-controls="bank">
+                                    Pilih Bank
+                                </a>
+                                <div class="collapse" id="bank">
+                                    <div class="card card-body">
+                                        <div class="form-check form-radio">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="bank" id="bank"
+                                                    value="checkedValue" checked>
+                                                Bank 1
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-radio">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="bank" id="bank"
+                                                    value="checkedValue">
+                                                Bank 2
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 mb-lg-4 form-group">
+                                <div class="label-text">
+                                    Jumlah
+                                </div>
+                                <input type="text" class="form-control card-shadow" name="" id=""
+                                    aria-describedby="helpId" placeholder="">
+                            </div>
+                            <div class="collapse-item">
+                                <a class="card-shadow" data-bs-toggle="collapse" href="#bunga" role="button"
+                                    aria-expanded="false" aria-controls="bunga">
+                                    Suku Bunga
+                                </a>
+                                <div class="collapse" id="bunga">
+                                    <div class="card card-body">
+                                        <div class="form-check form-radio">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="suku" id="suku"
+                                                    value="checkedValue" checked>
+                                                Suku Bunga 1
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-radio">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="suku" id="suku"
+                                                    value="checkedValue">
+                                                Suku Bunga 2
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse-item">
+                                <a class="card-shadow" data-bs-toggle="collapse" href="#waktu" role="button"
+                                    aria-expanded="false" aria-controls="waktu">
+                                    Jangka Waktu Peminjaman
+                                </a>
+                                <div class="collapse" id="waktu">
+                                    <div class="card card-body">
+                                        <div class="form-check form-radio">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="jangka_waktu"
+                                                    id="jangka_waktu" value="checkedValue" checked>
+                                                Jangka Waktu 1
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-radio">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="jangka_waktu"
+                                                    id="jangka_waktu" value="checkedValue">
+                                                Jangka Waktu 2
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-groups">
+                            <button type="button" class="btn btn-primary">Hitung Simulasi</button>
+                        </div>
+                        <div class="price-total">
+                            <p>Perkiraan pembayaran KPR Anda:</p>
+                            <h5>Rp. 16,350,000 / bulan</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="btn-groups">
+                <a href="k-simulation-payment-option.html" type="button" class="btn btn-grey">Kembali</a>
+                <a href="/k-simulation-order.html" type="button" class="btn btn-primary">Lanjutkan</a>
+            </div>
         </div>
+    </div>
     </div>
 
 

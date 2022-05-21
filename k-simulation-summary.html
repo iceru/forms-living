@@ -23,41 +23,114 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar d-none d-lg-block">
         <div class="container">
             <div class="logo">
                 <img src="/images/logo-forms-living1.png" alt="FORMS Living">
             </div>
             <div class="menu">
                 <ul>
-                    <a href="/">
-                        <li class="active">Home</li>
-                    </a>
-                    <li>
-                        Perumahan
+                    <li class="active">
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Perumahan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="/greenland.html">
+                                    <div>
+                                        <img src="/images/logo-tidar-green.png" alt="">
+                                        <p>Greenland</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project2b.png" alt="">
+                                        <p>Project B</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project3b.png" alt="">
+                                        <p>Project C</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project4.png" alt="">
+                                        <p>Project D</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project5.png" alt="">
+                                        <p>Project E</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         Hotel
                     </li>
                     <li>Mall</li>
-                    <a href="">
-                        <li>About Forms</li>
-                    </a>
-                    <a href="">
-                        <li>Contact</li>
-                    </a>
+                    <li>
+                        <a href="">About Forms</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
             <div class="action">
-                <button type="button" class="btn btn-outline-secondary">Login/Register</button>
-                <a href="#">
-                    <img src="" alt="">
-                </a>
+                <a href="/login.html" type="button" class="btn btn-outline-secondary">Login/Register</button>
+                    <a href="#">
+                        <img src="/images/ic-cart.png" alt="">
+                    </a>
+            </div>
+            <div class="icon-bell">
+                <img src="/images/ic-bell.png" alt="">
             </div>
         </div>
     </div>
 
     <div class="cluster">
+        <div class="header-simulation mobile-only">
+            <div class="ornament one">
+                <img src="/images/img-ornament1.png" alt="">
+            </div>
+            <div class="nav-header">
+                <div class="ic-back">
+                    <img src="/images/ic-back-sim.png" alt="">
+                </div>
+                <h2 class="title">
+                    Miliki Unit
+                </h2>
+                <div></div>
+            </div>
+            <div class="steps">
+                <div class="step done">1</div>
+                <div class="step done">2</div>
+                <div class="step done">3</div>
+                <div class="step done">4</div>
+                <div class="step done">5</div>
+                <div class="step done">6</div>
+                <div class="step done">7</div>
+                <div class="step active last">8</div>
+            </div>
+        </div>
         <div class="container">
             <div class="steps">
                 <div class="step done">1</div>
@@ -66,17 +139,19 @@
                 <div class="step done">4</div>
                 <div class="step done">5</div>
                 <div class="step done">6</div>
-                <div class="step active">7</div>
-                <div class="step last">8</div>
+                <div class="step done">7</div>
+                <div class="step active last">8</div>
             </div>
             <div>
-                <h2 class="title">
-                    Ringkasan Pemesanan Sementara
-                </h2>
 
                 <div class="second-layout">
                     <div class="row">
-                        <div class="col-12 col-lg-4 left-column">
+                        <div class="col-12 order-2 order-lg-1">
+                            <h2 class="title">
+                                Ringkasan Pemesanan Sementara
+                            </h2>
+                        </div>
+                        <div class="col-12 col-lg-4 left-column order-1 order-lg-2">
                             <div class="mod-type">
                                 <div class="type-image">
                                     <img src="/images/img-cluster.png" alt="">
@@ -101,83 +176,83 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-8 right-column">
+                        <div class="col-12 col-lg-8 right-column order-3">
                             <div class="row summary">
-                                <div class="col-4">
+                                <div class="col-5 col-lg-4">
                                     <p>Nama (Sesuai KTP)</p>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-7 col-lg-8">
                                     <p>Gilbert Setiawan</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-lg-4">
                                     <p>NIK</p>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-7 col-lg-8">
                                     <p>24348454545000003i</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-lg-4">
                                     <p>No. Whatsapp (Aktif)</p>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-7 col-lg-8">
                                     <p>+6285648984919</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-lg-4">
                                     <p>Alamat</p>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-7 col-lg-8">
                                     <p>Jl. Raya Tidar No. 18, Malang</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-lg-4">
                                     <p>Email</p>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-7 col-lg-8">
                                     <p>gl@gilbertsetiawan.com</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-lg-4">
                                     <p>No. NPWP</p>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-7 col-lg-8">
                                     <p>1234567890</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-lg-4">
                                     <p>Cluster / Blok</p>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-7 col-lg-8">
                                     <p>The Mainroad / A-2</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-lg-4">
                                     <p>Luas Tanah</p>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-7 col-lg-8">
                                     <p>170 m2</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-lg-4">
                                     <p>Luas Bangunan</p>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-7 col-lg-8">
                                     <p>90 m2</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-lg-4">
                                     <p>Biaya Modifikasi</p>
                                 </div>
-                                <div class="col-8 detail">
+                                <div class="col-7 col-lg-8 detail">
                                     <p>Rp. 250,000,000</p>
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#detail">Lihat Detail</a>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-lg-4">
                                     <p>Harga Rumah</p>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-7 col-lg-8">
                                     <p>Rp. 955,000,000</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-lg-4">
                                     <p>Promo Digunakan</p>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-7 col-lg-8">
                                     <p>- Rp. 5,000,000</p>
                                 </div>
-                                <div class="col-4"></div>
-                                <div class="col-8 ">
+                                <div class="col-5 col-lg-4"></div>
+                                <div class="col-7 col-lg-8 ">
                                     <div class="promo">
                                         <img src="/images/ic-promo.png" alt="">
                                         <p>Kode Kupon: BELIRUMAH</p>
@@ -186,11 +261,11 @@
                                 <div class="col-12">
                                     <hr>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5 col-lg-4">
                                     <h6>Harga Akhir Rumah</h6>
                                 </div>
-                                <div class="col-8">
-                                    Rp. 950,000,000
+                                <div class="col-7 col-lg-8">
+                                    <h6>Rp. 950,000,000</h6>
                                 </div>
                             </div>
                             <div class="form-check checkbox">

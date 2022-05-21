@@ -148,11 +148,29 @@
                 </div>
                 <div class="col-12 col-lg-6 cta-img pe-0">
                     <div class="image-sliders">
-                        <img src="/images/img-splash-screen.png" class="w-100" alt="">
+                        <div>
+                            <img src="/images/img-splash-screen.png" class="w-100" alt="">
+                        </div>
+                        <div>
+                            <img src="/images/img-cluster-large1.png" class="w-100" alt="">
+                        </div>
+                        <div>
+                            <img src="/images/img-cluster-large2.png" class="w-100" alt="">
+                        </div>
                     </div>
-                    <div class="text-blur-bg">
+                    <div class="text-blur-bg text-sliders">
                         <div>
                             <h5>Apartemen</h5>
+                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim interdum neque
+                                vel euismod. </small>
+                        </div>
+                        <div>
+                            <h5>Mall</h5>
+                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim interdum neque
+                                vel euismod. </small>
+                        </div>
+                        <div>
+                            <h5>Hotel</h5>
                             <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim interdum neque
                                 vel euismod. </small>
                         </div>
@@ -161,6 +179,25 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $('.image-sliders').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.text-sliders'
+        });
+
+        $('.text-sliders').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            dots: true,
+            asNavFor: '.image-sliders'
+        });
+    </script>
     <div class="projects">
         <div class="container">
             <h5 class="subtitle">
