@@ -2,11 +2,19 @@
     text-align: center;
     color: $secondary;
     margin-bottom: 1rem;
+
+    @include breakpoint(mobileonly) {
+        display: none;
+    }
 }
 
 .title {
     text-align: center;
     margin-bottom: 3rem;
+
+    @include breakpoint(mobileonly) {
+        margin-bottom: 1.5rem;
+    }
 }
 
 
@@ -51,9 +59,10 @@
 
 .container-fluid.left-side {
     padding-right: 0;
-    max-width: 94.2%;
+    max-width: 95.2%;
+    padding-left: 0;
     margin-left: auto;
-    margin-right: 1rem;
+    margin-right: 0;
 }
 
 .ornament {
@@ -76,4 +85,12 @@
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 1.5rem;
     border-radius: 10px;
+}
+
+.mobile-only {
+    display: none;
+
+    @include breakpoint(mobileonly) {
+        display: block;
+    }
 }

@@ -1,43 +1,33 @@
-$primary: linear-gradient(109.12deg, #A6E1B7 0%, #8ACCA1 54.5%);
-$primary-normal: #8ACCA1;
-$secondary: #A47449;
-$secondary-light: #D3BBA5;
-$grey-light: #B8BABC;
-$grey: #58595B;
+$primary: linear-gradient(109.12deg, #a6e1b7 0%, #8acca1 54.5%);
+$primary-normal: #8acca1;
+$secondary: #a47449;
+$secondary-light: #d3bba5;
+$grey-light: #b8babc;
+$grey: #58595b;
 
 /* BREAKPOINTS */
 @mixin breakpoint($point) {
-  @if $point ==desktop {
+  @if $point == desktop {
     @media (min-width: 1200px) {
       @content;
     }
-  }
-
-  @else if $point ==laptop {
+  } @else if $point == laptop {
     @media (min-width: 992px) {
       @content;
     }
-  }
-
-  @else if $point ==largeDesktop {
+  } @else if $point == largeDesktop {
     @media (min-width: 1400px) {
       @content;
     }
-  }
-
-  @else if $point ==tablet {
+  } @else if $point == tablet {
     @media (min-width: 768px) {
       @content;
     }
-  }
-
-  @else if $point ==mobileonly {
+  } @else if $point ==mobileonly {
     @media (max-width: 576px) {
       @content;
     }
-  }
-
-  @else if $point ==untilTablet {
+  } @else if $point ==untilTablet {
     @media (max-width: 992px) {
       @content;
     }
@@ -46,7 +36,7 @@ $grey: #58595B;
 
 @mixin blurBg {
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;

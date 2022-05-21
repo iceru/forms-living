@@ -58,3 +58,29 @@
         }
     }
 }
+
+.splash-screen {
+    position: relative;
+    height: 100vh;
+
+    .header-bg {
+        img {
+            min-height: 60vh;
+            object-fit: cover;
+        }
+    }
+
+    .content {
+        background-color: white;
+        padding: 1.75rem 1.5rem;
+        text-align: center;
+        border-radius: 32px 32px 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        .item {
+            margin-bottom: 2rem;
+        }
+    }
+}

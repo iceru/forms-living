@@ -205,6 +205,102 @@
                     margin-bottom: 1rem;
                 }
             }
+
+            @include breakpoint(mobileonly) {
+                .qr {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @include breakpoint(mobileonly) {
+        .items {
+            flex-wrap: nowrap;
+            overflow: auto;
+            padding-bottom: 3rem;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            .col-12 {
+                width: 90%;
+            }
+
+            .item {
+                position: relative;
+
+                &:before {
+                    left: -12px;
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    background-color: white;
+                    width: 24px;
+                    height: 24px;
+                    z-index: 1;
+                }
+
+                &:after {
+                    right: -12px;
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    background-color: white;
+                    width: 24px;
+                    height: 24px;
+                    z-index: 1;
+                }
+
+                .line {
+                    display: none;
+                }
+
+                .cashback {
+                    .promo-date {
+                        display: none;
+                    }
+
+                    .text-cashback {
+                        width: 60%;
+
+                        h5 {
+                            margin-bottom: 0
+                        }
+
+                        >p {
+                            display: none
+                        }
+
+                        .mobile-only {
+
+                            small {
+                                font-size: 10px;
+                            }
+
+                            .btn {
+                                padding: 6px 10px;
+                                border-radius: 100px;
+                                font-weight: 400;
+                                margin-top: .5rem;
+
+                                img {
+                                    width: 14px;
+                                    height: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -212,6 +308,10 @@
 .apps {
     color: white;
     padding-bottom: 100px;
+
+    @include breakpoint(mobileonly) {
+        display: none;
+    }
 
 
     .container {

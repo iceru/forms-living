@@ -100,10 +100,32 @@
             margin-right: 2.5rem;
         }
     }
+
+    .icon-bell,
+    .ic-mobile {
+        display: none;
+    }
+
+    @include breakpoint(mobileonly) {
+
+        .menu,
+        .action {
+            display: none;
+        }
+
+        .icon-bell,
+        .ic-mobile {
+            display: block;
+        }
+    }
 }
 
 .footer {
     color: $grey-light;
+
+    @include breakpoint(mobileonly) {
+        display: none;
+    }
 
     .container {
         padding-bottom: 1rem;
