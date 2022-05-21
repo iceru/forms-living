@@ -41,47 +41,7 @@
     .text-sliders {
         padding-bottom: 3rem;
 
-        .slick-dots {
-            bottom: 18px;
-            left: 1.5rem;
-            text-align: left;
-
-            li {
-                width: 8px;
-                height: 8px;
-
-                button {
-                    height: 8px;
-                    width: 8px;
-
-                    &::before {
-                        background-color: rgba($color: white, $alpha: 0.6);
-                        content: '';
-                        height: 8px;
-                        width: 8px;
-                        border-radius: 50%;
-                    }
-                }
-
-                &.slick-active {
-                    width: 32px;
-                    height: 8px;
-
-                    button {
-                        width: 32px;
-                        height: 8px;
-
-                        &::before {
-                            color: white;
-                            opacity: 1;
-                            width: 32px;
-                            height: 8px;
-                            border-radius: 8px;
-                        }
-                    }
-                }
-            }
-        }
+        @include dotsWhite();
     }
 
     .sponsor {
@@ -104,6 +64,15 @@
     }
 }
 
+@include breakpoint(mobileonly) {
+
+    .cta,
+    .projects,
+    .sliders-index {
+        display: none;
+    }
+}
+
 .projects {
     .item {
         position: relative;
@@ -123,6 +92,126 @@
             padding: 1.5rem;
             z-index: 2;
             @include blurBg;
+        }
+    }
+}
+
+.cta-mobile {
+    .container {
+        padding-bottom: 1.5rem;
+    }
+
+    .sliders-mobile {
+        margin-bottom: 0;
+
+        .item {
+            position: relative;
+
+            .logo {
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+
+                img {
+                    width: 100%;
+                    height: 20px;
+                    object-fit: cover;
+                }
+            }
+
+            img {
+                border-radius: 10px;
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+            }
+
+            .float-button {
+                color: white;
+                font-size: 10px;
+                padding: 7px 14px;
+                position: absolute;
+                right: 1rem;
+                bottom: 20px;
+                z-index: 2;
+
+                &:before {
+                    z-index: -1;
+                    content: '';
+                    border-radius: 100px;
+                    background-color: rgba($color: white, $alpha: 0.3);
+                    backdrop-filter: blur(10px);
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        @include dotsWhite();
+
+    }
+}
+
+.search-unit {
+    .container {
+        padding-bottom: 2.5rem;
+
+        .nav-tabs {
+            @include overflowFlex;
+            justify-content: start;
+
+            .nav-link {
+                color: $grey;
+                font-size: 12px;
+                padding: 6px 12px;
+                border-radius: 10px;
+                border: 1px solid #DEDEDE;
+                margin: 0;
+                margin-right: 12px;
+
+                &.active {
+                    color: white;
+                    background: $primary-normal;
+                    border: none;
+                }
+            }
+        }
+
+        .units {
+            @include overflowFlex;
+            margin-top: 1rem;
+            margin-right: -1.5rem;
+
+            .item {
+                margin-right: 12px;
+                display: block;
+
+                .item-img {
+                    margin-bottom: 12px;
+
+                    img {
+                        width: 160px;
+                        height: 100px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+                }
+
+                h6 {
+                    margin-bottom: 4px;
+                    font-size: 14px;
+                }
+
+                p {
+                    font-family: 'Questrial', sans-serif;
+                    color: $grey-light;
+                    margin-bottom: 0;
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
@@ -277,15 +366,8 @@
     @include breakpoint(mobileonly) {
         .items {
             flex-wrap: nowrap;
-            overflow: auto;
-            padding-bottom: 3rem;
-
-            &::-webkit-scrollbar {
-                display: none;
-            }
-
-            -ms-overflow-style: none;
-            scrollbar-width: none;
+            @include overflowFlex;
+            margin-right: -1.5rem;
 
             .col-12 {
                 width: 90%;

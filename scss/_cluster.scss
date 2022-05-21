@@ -443,13 +443,21 @@
 .second-layout {
     .left-column {
         border-right: 1px solid $grey-light;
+        padding-right: 2rem;
     }
 
     .right-column {
         padding-left: 4rem;
         padding-top: 1rem;
 
-        @include breakpoint(mobileonly) {
+    }
+
+    @include breakpoint(mobileonly) {
+        .left-column {
+            padding-right: .75rem;
+        }
+
+        .right-column {
             padding-left: .75rem;
             padding-top: 0;
         }

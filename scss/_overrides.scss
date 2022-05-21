@@ -51,7 +51,7 @@ h1 {
 
     @include breakpoint(mobileonly) {
         max-width: 100%;
-        padding-bottom: 80px;
+        padding: 0 1.5rem 48px 1.5rem;
     }
 }
 
@@ -59,7 +59,7 @@ h1 {
     padding-bottom: 160px;
 
     @include breakpoint(mobileonly) {
-        padding-bottom: 80px;
+        padding-bottom: 48px;
     }
 }
 
