@@ -106,6 +106,8 @@
     .icon-bell,
     .ic-mobile {
         display: none;
+        position: relative;
+        z-index: 3;
     }
 
     @include breakpoint(mobileonly) {

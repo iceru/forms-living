@@ -105,3 +105,11 @@
         display: block;
     }
 }
+
+.desktop-only {
+    display: block;
+
+    @include breakpoint(mobileonly) {
+        display: none;
+    }
+}

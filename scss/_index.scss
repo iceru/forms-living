@@ -159,6 +159,15 @@
     .container {
         padding-bottom: 2.5rem;
 
+        .no-unit {
+            text-align: center;
+            margin: 2rem;
+
+            img {
+                width: 80%;
+            }
+        }
+
         .nav-tabs {
             @include overflowFlex;
             justify-content: start;
@@ -214,6 +223,10 @@
             }
         }
     }
+}
+
+.index .promotions {
+    padding-bottom: 80px;
 }
 
 .sliders {

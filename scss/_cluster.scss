@@ -145,6 +145,31 @@
     }
 }
 
+.k-cluster {
+    @include breakpoint(mobileonly) {
+        .map {
+            margin: 0 -1.5rem;
+            border-radius: 0;
+
+            .control {
+                bottom: 3rem;
+            }
+        }
+
+        .mainroad {
+            background-color: white;
+            position: relative;
+            margin: 0;
+            width: 100vw;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: -2rem;
+            padding: 2rem 1.5rem;
+            border-radius: 32px 32px 0 0;
+        }
+    }
+}
+
 .mainroad {
     margin: 0 -2rem;
 
@@ -171,7 +196,7 @@
             margin-bottom: 1rem;
         }
 
-        .type-info {
+        .type-infos {
             display: flex;
             justify-content: space-between;
         }
@@ -183,6 +208,7 @@
                 display: flex;
                 align-items: center;
                 margin-right: 1rem;
+                color: $grey-light;
 
                 img {
                     margin-right: .5rem;
@@ -192,14 +218,62 @@
     }
 
     @include breakpoint(mobileonly) {
+        padding: 0 1.5rem;
+
+        .item {
+            @include mobileCardShadow;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            margin-bottom: 1rem;
+
+            h5 {
+                font-size: 14px;
+            }
+
+            .type {
+                margin-bottom: 8px;
+            }
+
+            .type-infos {
+                display: block;
+
+                .info {
+                    margin-bottom: 10px;
+                }
+
+                h5 {
+                    margin-bottom: 0;
+                }
+
+                .info-item {
+                    font-size: 10px;
+
+                    img {
+                        width: 15px;
+                    }
+                }
+            }
+
+            .item-image {
+                margin-right: 1rem;
+
+                img {
+                    width: 72px;
+                    height: 72px;
+                    object-fit: cover;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
         &.types {
             padding: 1rem;
 
             .item {
                 display: flex;
                 margin-bottom: 1rem;
-                padding: .5rem;
-                box-shadow: 0px 2px 8px 0px #0000001A;
+                @include mobileCardShadow;
 
                 .item-image {
                     margin-right: 1rem;
@@ -234,6 +308,41 @@
                 }
             }
         }
+    }
+}
+
+.header-detail {
+    margin: 0 -1.5rem;
+    height: 320px;
+
+    .item {
+        img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+    }
+}
+
+.detail-cluster {
+    .content {
+        margin: 0 -1.5rem;
+        padding: 2rem 1.5rem;
+        margin-top: -2rem;
+        border-radius: 32px 32px 0 0;
+        background-color: white;
+        position: relative;
+    }
+
+    .content-footer {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 1.5rem;
+        background-color: white;
     }
 }
 
@@ -292,6 +401,15 @@
     img {
         margin-right: .5rem;
     }
+
+
+    @include breakpoint(mobileonly) {
+        font-size: 12px;
+
+        img {
+            width: 18px;
+        }
+    }
 }
 
 .spesification {
@@ -303,6 +421,16 @@
         width: 60%;
         margin: auto;
         margin-top: 2rem;
+
+        @include breakpoint(mobileonly) {
+            width: 100%;
+
+            .table {
+                tr td {
+                    font-size: 12px;
+                }
+            }
+        }
 
         .table {
             tr td:first-child {
@@ -483,7 +611,7 @@
             flex-wrap: wrap;
 
             .type-item {
-                margin-right: 3.5rem;
+                margin-right: 2.5rem;
                 margin-bottom: 1rem;
 
                 p {

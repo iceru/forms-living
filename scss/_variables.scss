@@ -124,3 +124,8 @@ $grey: #58595b;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+@mixin mobileCardShadow() {
+  box-shadow: 0px 2px 8px 0px #0000001A;
+  padding: .5rem;
+}

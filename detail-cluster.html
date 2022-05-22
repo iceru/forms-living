@@ -10,16 +10,31 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.2/font/bootstrap-icons.min.css"
+        integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/app.css">
 
     <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar d-none d-lg-block">
         <div class="container">
             <div class="logo">
                 <a href="/index.html">
@@ -28,37 +43,101 @@
             </div>
             <div class="menu">
                 <ul>
-                    <a href="/">
-                        <li class="active">Home</li>
-                    </a>
-                    <li>
-                        Perumahan
+                    <li class="active">
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Perumahan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="/greenland.html">
+                                    <div>
+                                        <img src="/images/logo-tidar-green.png" alt="">
+                                        <p>Greenland</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project2b.png" alt="">
+                                        <p>Project B</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project3b.png" alt="">
+                                        <p>Project C</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project4.png" alt="">
+                                        <p>Project D</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project5.png" alt="">
+                                        <p>Project E</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         Hotel
                     </li>
                     <li>Mall</li>
-                    <a href="">
-                        <li>About Forms</li>
-                    </a>
-                    <a href="">
-                        <li>Contact</li>
-                    </a>
+                    <li>
+                        <a href="">About Forms</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
             <div class="action">
-                <button type="button" class="btn btn-outline-secondary">Login/Register</button>
-                <a href="#">
-                    <img src="" alt="">
-                </a>
+                <a href="/login.html" type="button" class="btn btn-outline-secondary">Login/Register</button>
+                    <a href="#">
+                        <img src="/images/ic-cart.png" alt="">
+                    </a>
+            </div>
+            <div class="icon-bell">
+                <img src="/images/ic-bell.png" alt="">
             </div>
         </div>
     </div>
-    <div class="cluster">
+    <div class="detail-cluster">
         <div class="container">
-            <div class="gallery">
+            <div class="header-detail mobile-only">
+                <div class="sliders">
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="/images/img-cluster-large3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function () {
+                    $('.header-detail .sliders').slick()
+                });
+            </script>
+            <div class=" gallery desktop-only">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 ">
                         <button type="button" class="btn btn-light">Kembali</button>
                     </div>
                     <div class="col-12 col-lg-9 image-left">
@@ -79,7 +158,7 @@
                     <div>
                         <h3>The Mainroad Cluster</h3>
                     </div>
-                    <div class="text-end">
+                    <div class="text-end desktop-only">
                         <p class="mb-2">Start from</p>
                         <h5>975 jt</h5>
                     </div>
@@ -96,84 +175,98 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <button type="button" class="btn btn-primary">Miliki Unit Ini</button>
+                    <div class="desktop-only">
+                        <a href="/k-simulation-cluster.html" type="button" class="btn btn-primary">Miliki Unit Ini</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="spesification">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="denah-tab" data-bs-toggle="tab" data-bs-target="#denah"
+                                type="button" role="tab" aria-controls="denah" aria-selected="true">Denah</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="spesifikasi-tab" data-bs-toggle="tab"
+                                data-bs-target="#spesifikasi" type="button" role="tab" aria-controls="spesifikasi"
+                                aria-selected="false">Spesifikasi
+                                Umum</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="denah" role="tabpanel" aria-labelledby="denah-tab">
+                            <div class="img-denah">
+                                <img src="/images/img-denah.png" class="w-100" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="spesifikasi" role="tabpanel" aria-labelledby="spesifikasi-tab">
+                            <div class="spec-table">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td>Pondasi</td>
+                                            <td>Batu kali, footplate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Struktur</td>
+                                            <td>Beton bertulang</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dinding luar</td>
+                                            <td>Pasangan bata finishing cat/woodplank/batu alam</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dinding dalam</td>
+                                            <td>Pasangan bata finishing cat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dinding kamar mandi</td>
+                                            <td>Granitile 60x60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rangka atap</td>
+                                            <td>Galvalum</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Penutup atap</td>
+                                            <td>Genteng flat beton </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Plafon Dalam</td>
+                                            <td>Gypsum</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Plafon Luar</td>
+                                            <td>Fiber Semen</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lantai Ruang Utama</td>
+                                            <td>Granitile 60x60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sanitasi Kamar Mandi</td>
+                                            <td>American Standart</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-only">
+                    <div class="content-footer">
+                        <div>
+                            <p class="mb-2">Start from</p>
+                            <h5>975 jt</h5>
+                        </div>
+                        <div>
+                            <a href="/k-simulation-cluster.html" type="button" class="btn btn-primary">Miliki Unit
+                                Ini</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="spesification">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="denah-tab" data-bs-toggle="tab" data-bs-target="#denah"
-                            type="button" role="tab" aria-controls="denah" aria-selected="true">Denah</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="spesifikasi-tab" data-bs-toggle="tab" data-bs-target="#spesifikasi"
-                            type="button" role="tab" aria-controls="spesifikasi" aria-selected="false">Spesifikasi
-                            Umum</button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="denah" role="tabpanel" aria-labelledby="denah-tab">
-                        <div class="img-denah">
-                            <img src="/images/img-denah.png" alt="">
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="spesifikasi" role="tabpanel" aria-labelledby="spesifikasi-tab">
-                        <div class="spec-table">
-                            <table class="table table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <td>Pondasi</td>
-                                        <td>Batu kali, footplate</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Struktur</td>
-                                        <td>Beton bertulang</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dinding luar</td>
-                                        <td>Pasangan bata finishing cat/woodplank/batu alam</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dinding dalam</td>
-                                        <td>Pasangan bata finishing cat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dinding kamar mandi</td>
-                                        <td>Granitile 60x60</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rangka atap</td>
-                                        <td>Galvalum</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Penutup atap</td>
-                                        <td>Genteng flat beton </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Plafon Dalam</td>
-                                        <td>Gypsum</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Plafon Luar</td>
-                                        <td>Fiber Semen</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lantai Ruang Utama</td>
-                                        <td>Granitile 60x60</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sanitasi Kamar Mandi</td>
-                                        <td>American Standart</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     <div class="footer">

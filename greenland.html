@@ -33,7 +33,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
-<body>
+<body class="greenland">
     <div class="navbar secondary">
         <div class="container">
             <div class="ic-mobile">
@@ -112,7 +112,33 @@
                 <button type="button" class="btn btn-outline-secondary">Login/Register</button>
             </div>
             <div class="ic-mobile">
-                <img src="/images/ic-filter-greenland.png" alt="">
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <img src="/images/ic-filter-greenland.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -188,6 +214,51 @@
                                 pemiliknya
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-only">
+        <div class="hunian">
+            <div class="container">
+                <h2 class="title">
+                    Hunian di Greenland
+                </h2>
+                <div class="items">
+                    <a href="/k-cluster.html" class="item">
+                        <div class="item-image">
+                            <img src="/images/img-cluster-large3.png" alt="">
+                        </div>
+                        <div class="item-avail">4 Available</div>
+                        <h5 class="item-title">The Mainroad</h5>
+                        <p class="item-sub">Cluster</p>
+                    </a>
+                    <div class="item">
+                        <div class="item-image">
+                            <img src="/images/img-cluster2.png" alt="">
+                        </div>
+                        <div class="item-avail">4 Available</div>
+
+                        <h5 class="item-title">The Icon</h5>
+                        <p class="item-sub">Cluster</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-image">
+                            <img src="/images/img-cluster3.png" alt="">
+                        </div>
+                        <div class="item-avail">4 Available</div>
+                        <h5 class="item-title">Green West</h5>
+                        <p class="item-sub">Cluster</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-image">
+                            <img src="/images/img-cluster4.png" alt="">
+                        </div>
+                        <div class="item-avail">4 Available</div>
+                        <h5 class="item-title">Green East</h5>
+                        <p class="item-sub">Cluster</p>
                     </div>
                 </div>
             </div>
