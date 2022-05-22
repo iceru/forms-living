@@ -237,13 +237,22 @@
         height: 100%;
 
         .quotes-icon {
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
+
+            @include breakpoint(largeDesktop) {
+                margin-bottom: 3rem;
+            }
         }
 
         .testimoni-text {
             font-weight: 400;
             line-height: 1.5;
             width: 75%;
+            font-size: 1.75rem;
+
+            @include breakpoint(largeDesktop) {
+                font-size: 36px;
+            }
         }
 
         .nextArrow {
