@@ -3303,6 +3303,148 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.profile .user-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4rem;
+}
+
+.profile .user-profile .user-image img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 2rem;
+}
+
+.profile .user-profile .user-detail h5 {
+  margin-top: 8px;
+}
+
+.profile .user-profile .user-detail p {
+  color: #b8babc;
+}
+
+.profile .right-column {
+  padding-left: 2rem;
+}
+
+.profile .right-column h5 {
+  margin-bottom: 40px;
+}
+
+.profile .right-column .edit-profile .edit-image {
+  margin-bottom: 2rem;
+}
+
+.profile .right-column .edit-profile .edit-image .image {
+  position: relative;
+  display: inline-block;
+}
+
+.profile .right-column .edit-profile .edit-image .image > img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile .right-column .edit-profile .edit-image .btn-change {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.profile .right-column .edit-profile .forms .form-label {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.profile .profile-nav .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.profile .profile-nav .item.active, .profile .profile-nav .item:hover {
+  background-color: #F2F2F2;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.profile .profile-nav .item .d-flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .profile-nav .item .d-flex .icon {
+  margin-right: 1rem;
+}
+
+.profile .profile-nav .item .d-flex p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .profile .container {
+    margin-top: -2rem;
+    position: relative;
+    padding: 2rem 1.5rem;
+    border-radius: 32px 32px 0 0;
+    z-index: 3;
+    background-color: white;
+  }
+  .profile .right-column {
+    padding-left: .75rem;
+  }
+  .profile .user-profile {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #B8BABC;
+    padding-bottom: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  .profile .user-profile .user-image img {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .profile .profile-nav .item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .profile .right-column .edit-profile h5,
+  .profile .right-column .edit-profile .edit-image {
+    text-align: center;
+    display: block;
+  }
+  .profile .right-column .edit-profile .form-label {
+    display: none;
+  }
+  .profile .right-column .edit-profile .form-control,
+  .profile .right-column .edit-profile .form-select {
+    font-size: 12px;
+  }
+  .profile .right-column .edit-profile .mb-5 {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

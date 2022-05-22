@@ -84,3 +84,161 @@
         }
     }
 }
+
+.profile {
+    .user-profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4rem;
+
+        .user-image {
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                margin-right: 2rem;
+            }
+        }
+
+        .user-detail {
+            h5 {
+                margin-top: 8px;
+            }
+
+            p {
+                color: $grey-light;
+            }
+        }
+    }
+
+
+    .right-column {
+        padding-left: 2rem;
+
+        h5 {
+            margin-bottom: 40px;
+        }
+
+        .edit-profile {
+
+            .edit-image {
+                margin-bottom: 2rem;
+
+                .image {
+                    position: relative;
+                    display: inline-block;
+
+                    >img {
+                        width: 170px;
+                        height: 170px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+                .btn-change {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+
+            .forms {
+                .form-label {
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .profile-nav {
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: all .2s ease;
+
+            &.active,
+            &:hover {
+                background-color: #F2F2F2;
+                transition: all .2s ease;
+            }
+
+            .d-flex {
+                align-items: center;
+
+                .icon {
+                    margin-right: 1rem;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    @include breakpoint(mobileonly) {
+        .container {
+            margin-top: -2rem;
+            position: relative;
+            padding: 2rem 1.5rem;
+            border-radius: 32px 32px 0 0;
+            z-index: 3;
+            background-color: white;
+        }
+
+        .right-column {
+            padding-left: .75rem;
+        }
+
+        .user-profile {
+            display: block;
+            text-align: center;
+            border-bottom: 1px solid #B8BABC;
+            padding-bottom: 2.25rem;
+            margin-bottom: 2rem;
+
+            .user-image {
+                img {
+                    margin-right: 0;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+
+        .profile-nav {
+            .item {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .right-column {
+            .edit-profile {
+
+                h5,
+                .edit-image {
+                    text-align: center;
+                    display: block
+                }
+
+                .form-label {
+                    display: none;
+                }
+
+                .form-control,
+                .form-select {
+                    font-size: 12px;
+                }
+
+                .mb-5 {
+                    margin-bottom: 1.5rem !important;
+                }
+            }
+        }
+    }
+}
