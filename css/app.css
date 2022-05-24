@@ -298,6 +298,29 @@ h1 {
           box-shadow: 0 0 0 0.25rem rgba(138, 204, 161, 0.25);
 }
 
+.ui-widget.ui-widget-content {
+  background-color: #DEDEDE;
+  border: none;
+  height: 4px;
+  border-radius: 20px;
+}
+
+.ui-slider .ui-slider-handle {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #d3bba5;
+  border: none;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -0.6rem;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+  background-color: #d3bba5;
+}
+
 .subtitle {
   text-align: center;
   color: #a47449;
@@ -3191,7 +3214,7 @@ h1 {
   padding-left: 1rem;
 }
 
-.congratulation {
+.congratulation .container-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3205,14 +3228,13 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 75vh;
 }
 
 .congratulation .logo {
   margin-bottom: 5rem;
 }
 
-.congratulation .icon-check {
+.congratulation .logo-check {
   margin-bottom: 3rem;
 }
 
@@ -3221,7 +3243,38 @@ h1 {
 }
 
 .congratulation p {
+  margin: auto;
   margin-bottom: 5rem;
+  text-align: center;
+  width: 65%;
+}
+
+@media (max-width: 576px) {
+  .congratulation .container-fluid {
+    margin-top: -2rem;
+    border-radius: 32px 32px 0 0;
+    background-color: white;
+    position: relative;
+    padding: 2rem 1.5rem;
+  }
+  .congratulation .logo {
+    margin-bottom: 40px;
+  }
+  .congratulation .logo-check {
+    margin-bottom: 2rem;
+  }
+  .congratulation .logo-check img {
+    width: 100px;
+    height: 100px;
+  }
+  .congratulation h1 {
+    font-size: 24px;
+  }
+  .congratulation p {
+    width: 80%;
+    font-size: 12px;
+    margin-bottom: 3rem;
+  }
 }
 
 .virtual-image {
@@ -3468,6 +3521,50 @@ h1 {
   .profile .right-column .edit-profile .mb-5 {
     margin-bottom: 1.5rem !important;
   }
+}
+
+.filter .container {
+  padding: 2rem 1.5rem;
+  position: relative;
+  border-radius: 32px 32px 0 0;
+  margin-top: -2rem;
+  background-color: white;
+}
+
+.filter .container .filter-section {
+  margin-bottom: 2rem;
+}
+
+.filter .container .filter-section h6 {
+  font-size: 18px;
+  padding-bottom: 18px;
+}
+
+.filter .container .filter-section .range-price {
+  padding-bottom: 2rem;
+}
+
+.filter .container .filter-section .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter .container .filter-section .items .item {
+  padding: .75rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #DEDEDE;
+  margin-right: .75rem;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter .container .filter-section .items .item.active {
+  background-color: #d3bba5;
+  color: white;
+  font-weight: bold;
+  border-color: #d3bba5;
 }
 
 * {

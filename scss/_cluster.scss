@@ -1075,17 +1075,18 @@
 }
 
 .congratulation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 75vh;
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .logo {
         margin-bottom: 5rem;
     }
 
-    .icon-check {
+    .logo-check {
         margin-bottom: 3rem;
     }
 
@@ -1094,6 +1095,43 @@
     }
 
     p {
+        margin: auto;
         margin-bottom: 5rem;
+        text-align: center;
+        width: 65%;
     }
+
+    @include breakpoint(mobileonly) {
+        .container-fluid {
+            margin-top: -2rem;
+            border-radius: 32px 32px 0 0;
+            background-color: white;
+            position: relative;
+            padding: 2rem 1.5rem;
+        }
+
+        .logo {
+            margin-bottom: 40px;
+        }
+
+        .logo-check {
+            margin-bottom: 2rem;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            width: 80%;
+            font-size: 12px;
+            margin-bottom: 3rem;
+        }
+    }
+
 }

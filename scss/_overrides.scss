@@ -288,3 +288,26 @@ h1 {
         }
     }
 }
+
+.ui-widget.ui-widget-content {
+    background-color: #DEDEDE;
+    border: none;
+    height: 4px;
+    border-radius: 20px;
+}
+
+.ui-slider .ui-slider-handle {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: $secondary-light;
+    border: none;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.6rem;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    background-color: $secondary-light;
+}
