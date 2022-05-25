@@ -3567,6 +3567,154 @@ h1 {
   border-color: #d3bba5;
 }
 
+.kiosk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.kiosk .sidebar {
+  min-height: 100vh;
+  background-color: #F2F2F2;
+  padding: 64px 20px;
+  width: 20%;
+}
+
+.kiosk .sidebar .logo {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.kiosk .sidebar .items .item {
+  background-color: #D3BBA580;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 124px;
+  font-size: 20px;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.kiosk .sidebar .items .item img {
+  width: 100%;
+}
+
+.kiosk .sidebar .items .item.active, .kiosk .sidebar .items .item:hover {
+  color: white;
+  background: linear-gradient(299.53deg, #A47449 54.82%, #C58A56 104.36%);
+}
+
+.kiosk .sidebar .items .item.active img, .kiosk .sidebar .items .item:hover img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.kiosk .kiosk-content {
+  width: 80%;
+}
+
+.kiosk .kiosk-content .btn-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 1.5rem;
+}
+
+.kiosk .kiosk-content .btn-header .btn {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.kiosk .kiosk-content .btn-header .btn img {
+  margin-right: 1rem;
+}
+
+.kiosk .kiosk-content .btn-footer .btn {
+  height: 100px;
+  width: 380px;
+  font-size: 24px;
+  border-radius: 20px;
+}
+
+.kiosk .categories .container-fluid {
+  padding: 2rem;
+}
+
+.kiosk .categories .container-fluid > h3 {
+  text-align: center;
+  margin: 3.5rem 0;
+  font-size: 36px;
+}
+
+.kiosk .categories .cluster p {
+  margin-bottom: .75rem !important;
+}
+
+.kiosk .categories .facility-title {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.kiosk .categories .feature {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.kiosk .categories .feature img {
+  margin-bottom: 40px;
+}
+
+.kiosk .categories .feature h4 {
+  margin-bottom: 1rem;
+  font-size: 28px;
+}
+
+.kiosk .categories .feature p {
+  width: 60%;
+  color: #828282;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.kiosk .categories .feature .more {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+}
+
+.kiosk .categories .item {
+  margin-bottom: 3rem;
+}
+
+.kiosk .categories .item .item-img img {
+  border-radius: 20px;
+  width: 100%;
+  max-height: 240px;
+  margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.kiosk .categories .item p {
+  margin-bottom: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
