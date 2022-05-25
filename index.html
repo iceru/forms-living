@@ -116,13 +116,97 @@
             <div class="icon-bell">
                 <img src="/images/ic-bell.png" alt="">
             </div>
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar"
+                class="icon-burger btn p-0">
+                <img src="/images/ic-hamburger.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="sidebar" aria-labelledby="sidebar">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="menu">
+                <ul>
+                    <li class="active">
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Perumahan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="/greenland.html">
+                                    <div>
+                                        <img src="/images/logo-tidar-green.png" alt="">
+                                        <p>Greenland</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project2b.png" alt="">
+                                        <p>Project B</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project3b.png" alt="">
+                                        <p>Project C</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project4.png" alt="">
+                                        <p>Project D</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project5.png" alt="">
+                                        <p>Project E</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Hotel
+                    </li>
+                    <li>Mall</li>
+                    <li>
+                        <a href="">About Forms</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="action">
+                <a href="/login.html" type="button" class="btn btn-outline-secondary">Login/Register</button>
+                    <a href="#">
+                        <img src="/images/ic-cart.png" alt="">
+                    </a>
+            </div>
         </div>
     </div>
 
     <div class="cta">
         <div class="container-fluid left-side">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-6 cta-text">
+                <div class="col-12 col-lg-6 cta-text mb-4 mb-lg-0">
                     <h5 class="cta-subtitle">Selamat datang di FORMS Living</h5>
                     <h1 class="cta-title">Representasi gaya hidup millenials dalam satu genggaman</h1>
                     <p class="cta-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ullam
@@ -432,7 +516,7 @@
                 Promo untung banget
             </h2>
             <div class="row items">
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-0">
                     <div class="item brown">
                         <div class="cashback">
                             <div class="text-cashback">
@@ -471,7 +555,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-0">
                     <div class="item grey">
                         <div class="cashback">
                             <div class="text-cashback">
@@ -509,7 +593,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-0">
                     <div class="item green">
                         <div class="cashback">
                             <div class="text-cashback">
@@ -560,7 +644,7 @@
                 <img src="/images/img-ornament1.png" alt="">
             </div>
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-5 col-lg-6">
                     <div class="apps-preview">
                         <div class="first">
                             <img src="/images/phone-1.png" alt="">
@@ -571,7 +655,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6">
+                <div class="col-7 col-lg-6">
                     <h2>Percayalah, hidup itu hanya butuh jari</h2>
                     <p>
                         Bayar iuran bulanan?

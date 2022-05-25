@@ -280,6 +280,23 @@
             }
         }
     }
+
+    @include breakpoint(untilTablet) {
+        .slider-item {
+            .slider-img {
+                img {
+                    height: 450px;
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+
+            .slider-content {
+                width: 70vw;
+            }
+        }
+    }
+
 }
 
 .promotions {
@@ -355,6 +372,10 @@
                 margin-top: -1rem;
                 position: relative;
                 margin-bottom: -1rem;
+
+                img {
+                    width: 100%;
+                }
             }
 
             .qr {
@@ -468,7 +489,6 @@
         display: none;
     }
 
-
     .container {
         position: relative;
         padding-bottom: 0;
@@ -532,6 +552,36 @@
 
         img {
             margin-right: 1.5rem;
+        }
+    }
+
+    @include breakpoint(untilTablet) {
+        .row {
+            padding: 0 1rem;
+        }
+
+        .ornament {
+            img {
+                width: 250px;
+            }
+        }
+
+        h2 {
+            padding-right: 0;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 1.5rem;
+        }
+
+        .logos {
+            align-items: center;
+
+            img {
+                height: 45px;
+            }
         }
     }
 }

@@ -123,6 +123,7 @@ h1 {
         &:hover {
             background-color: $secondary;
             color: white;
+            border-color: white;
         }
     }
 
@@ -209,7 +210,11 @@ h1 {
         margin-bottom: 2rem;
     }
 
-    @include breakpoint(mobileonly) {
+    @include breakpoint(untilTablet) {
+        .modal-dialog {
+            max-width: 100vw;
+        }
+
         .modal-content {
             padding: 1rem;
         }
