@@ -3853,6 +3853,41 @@ h1 {
   margin-right: 12px;
 }
 
+.kiosk .categories .types h5 {
+  font-size: 24px;
+}
+
+.kiosk .categories .types .type-text {
+  margin-bottom: 1rem;
+}
+
+.kiosk .categories .types .item-img {
+  position: relative;
+}
+
+.kiosk .categories .types .item-img .icon-expand {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem;
+}
+
+.kiosk .categories .types .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.kiosk .categories .types .info .info-item {
+  margin-right: 1.5rem;
+  color: #b8babc;
+}
+
+.kiosk .categories .types .info .info-item img {
+  margin-right: .5rem;
+}
+
 .kiosk .categories .item {
   margin-bottom: 3rem;
 }

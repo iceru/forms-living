@@ -275,6 +275,42 @@
             }
         }
 
+        .types {
+            h5 {
+                font-size: 24px;
+            }
+
+            .type-text {
+                margin-bottom: 1rem;
+            }
+
+            .item-img {
+                position: relative;
+
+                .icon-expand {
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                    padding: 1rem;
+                }
+            }
+
+
+            .info {
+                display: flex;
+                margin-bottom: 12px;
+
+                .info-item {
+                    margin-right: 1.5rem;
+                    color: $grey-light;
+
+                    img {
+                        margin-right: .5rem;
+                    }
+                }
+            }
+        }
+
         .item {
             margin-bottom: 3rem;
 
