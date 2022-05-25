@@ -3642,11 +3642,81 @@ h1 {
   margin-right: 1rem;
 }
 
+.kiosk .kiosk-content .btn-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: white;
+}
+
 .kiosk .kiosk-content .btn-footer .btn {
   height: 100px;
   width: 380px;
   font-size: 24px;
   border-radius: 20px;
+}
+
+.kiosk .promotions .item {
+  position: relative;
+}
+
+.kiosk .promotions .item .cashback {
+  padding: 36px 64px;
+}
+
+.kiosk .promotions .item .cashback h5 {
+  font-size: 36px;
+  margin-bottom: 4px;
+}
+
+.kiosk .promotions .item .cashback h1 {
+  font-size: 96px;
+  line-height: 1;
+}
+
+.kiosk .promotions .item .cashback p {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.kiosk .promotions .item .cashback .btn {
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 100px;
+}
+
+.kiosk .promotions .item .cashback .bg-cashback img {
+  width: 380px;
+  height: 322px;
+}
+
+.kiosk .promotions .item:before {
+  left: -32px;
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: white;
+  width: 57px;
+  height: 57px;
+  z-index: 1;
+}
+
+.kiosk .promotions .item:after {
+  right: -32px;
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: white;
+  width: 57px;
+  height: 57px;
+  z-index: 1;
 }
 
 .kiosk .categories .container-fluid {
@@ -3659,6 +3729,10 @@ h1 {
   font-size: 36px;
 }
 
+.kiosk .categories .cluster {
+  width: 100%;
+}
+
 .kiosk .categories .cluster p {
   margin-bottom: .75rem !important;
 }
@@ -3666,6 +3740,60 @@ h1 {
 .kiosk .categories .facility-title {
   font-size: 28px;
   font-weight: 400;
+}
+
+.kiosk .categories .testimoni {
+  padding: 0 4rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.kiosk .categories .testimoni:not(:last-child):after {
+  content: '';
+  width: calc(100% - 8rem);
+  height: 1px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  background-color: #b8babc;
+  position: absolute;
+}
+
+.kiosk .categories .testimoni .testimoni-text {
+  font-size: 20px;
+  font-family: 'Questrial';
+  margin-bottom: 2.25rem;
+}
+
+.kiosk .categories .testimoni .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.kiosk .categories .testimoni .user .user-img {
+  margin-right: 14px;
+}
+
+.kiosk .categories .testimoni .user .user-img img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.kiosk .categories .testimoni .user .user-desc h6 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.kiosk .categories .testimoni .user .user-desc p {
+  font-size: 18px;
+  color: #b8babc;
+  margin: 0;
 }
 
 .kiosk .categories .feature {
@@ -3696,6 +3824,33 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 20px;
+}
+
+.kiosk .categories .places .item > img {
+  width: 100%;
+  border-radius: 20px;
+  height: 420px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.kiosk .categories .places .item .type {
+  color: #b8babc;
+  margin-right: 2.25rem;
+}
+
+.kiosk .categories .places .item .eta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #b8babc;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.kiosk .categories .places .item .eta img {
+  margin-right: 12px;
 }
 
 .kiosk .categories .item {
