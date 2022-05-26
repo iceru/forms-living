@@ -31,9 +31,13 @@
             padding: 0;
 
             >li {
-                padding: .5rem 1.5rem;
+                padding: .5rem 1rem;
                 color: $grey-light;
-                font-size: 18px;
+
+                @include breakpoint(largeDesktop) {
+                    font-size: 18px;
+                    padding: .5rem 1.5rem;
+                }
 
                 &.active,
                 &:hover,
@@ -50,16 +54,17 @@
         }
 
         .dropdown-menu {
-            padding: 1rem 3rem;
+            padding: 1rem;
             top: 4rem;
             box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
             border: none;
-            left: -23vw;
-            min-width: 80vw;
+            left: -25vw;
+            width: 90vw;
             justify-content: center;
 
             @include breakpoint(largeDesktop) {
-                left: -25vw;
+                padding: 1rem 3rem;
+                left: -27vw;
             }
 
             &.show {
@@ -67,8 +72,10 @@
             }
 
             >li {
+                width: 100%;
+
                 a {
-                    padding: 1rem 2.25rem;
+                    padding: 1rem 2rem;
                     text-align: center;
 
                     @include breakpoint(largeDesktop) {
@@ -77,6 +84,7 @@
 
                     img {
                         filter: grayscale(100%);
+                        width: 100%;
                     }
 
                     &:hover {
@@ -106,8 +114,15 @@
         align-items: center;
 
         .btn {
-            margin-right: 2.5rem;
+            margin-right: 2rem;
             padding: 1rem 1.5rem;
+            font-size: 16px;
+        }
+
+        @include breakpoint(largeDesktop) {
+            .btn {
+                font-size: 20px;
+            }
         }
     }
 
@@ -140,6 +155,10 @@
                     object-fit: contain;
                 }
             }
+
+            .icon-burger img {
+                filter: brightness(0) invert(1);
+            }
         }
 
         .menu,
@@ -150,6 +169,8 @@
         .icon-burger {
 
             display: block;
+            position: relative;
+            z-index: 4;
         }
     }
 
@@ -169,10 +190,26 @@
             display: block;
         }
 
+        .icon-burger {
+            display: none;
+        }
+
     }
 }
 
 .offcanvas.sidebar {
+    &.secondary {
+        background-color: $secondary;
+        color: white;
+
+        .btn-close {
+            padding: .5rem;
+            border-radius: 50%;
+            background-color: white;
+            opacity: 1;
+        }
+    }
+
     .offcanvas-header {
         justify-content: end;
         padding: 2rem;
@@ -220,7 +257,7 @@
     z-index: 20;
     box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
 
-    @include breakpoint(laptop) {
+    @include breakpoint(tablet) {
         display: none;
     }
 

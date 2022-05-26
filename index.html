@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 
     <!-- JS -->
@@ -28,6 +29,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -207,17 +209,20 @@
         <div class="container-fluid left-side">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 cta-text mb-4 mb-lg-0">
-                    <h5 class="cta-subtitle">Selamat datang di FORMS Living</h5>
-                    <h1 class="cta-title">Representasi gaya hidup millenials dalam satu genggaman</h1>
-                    <p class="cta-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ullam
+                    <h5 class="cta-subtitle" data-aos="fade-right">Selamat datang di FORMS Living</h5>
+                    <h1 class="cta-title" data-aos="fade-right" data-aos-delay="400">Representasi gaya hidup millenials
+                        dalam satu genggaman
+                    </h1>
+                    <p class="cta-desc" data-aos="fade-right" data-aos-delay="600">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Accusantium ullam
                         soluta laudantium at,
                         minima temporibus sapiente!</p>
-                    <div class="actions">
+                    <div class="actions" data-aos="fade-right" data-aos-delay="600">
                         <button type="button" class="btn btn-primary">Jelajahi Sekarang</button>
                         <button type="button" class="btn btn-blank-primary"><img src="/images/ic-play-fill.png" alt="">
                             <span>Tonton Video</span></button>
                     </div>
-                    <div class="sponsor">
+                    <div class="sponsor" data-aos="fade-right" data-aos-delay="600" data-aos-offset="0">
                         <p>Trusted by</p>
                         <div class="logos">
                             <div class="item">
@@ -232,7 +237,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 cta-img pe-0">
+                <div class="col-12 col-lg-6 cta-img pe-0" data-aos="fade-left" data-aos-delay="400">
                     <div class="image-sliders">
                         <div>
                             <img src="/images/img-splash-screen.png" class="w-100" alt="">
@@ -398,7 +403,7 @@
             </h2>
             <div class="row items">
                 <div class="col-12 col-lg-6">
-                    <div class="item">
+                    <div class="item" data-aos="fade-right">
                         <img src="/images/img-greenland.png" alt="">
                         <div class="item-text">
                             <h4>Greenland</h4>
@@ -412,7 +417,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="item">
+                    <div class="item" data-aos="fade-left">
                         <img src="/images/img-apartement.png" alt="">
                         <div class="item-text">
                             <h4>Project B</h4>
@@ -426,7 +431,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="item">
+                    <div class="item" data-aos="fade-right">
                         <img src="/images/img-hotel.png" alt="">
                         <div class="item-text">
                             <h4>Project C</h4>
@@ -440,7 +445,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="item">
+                    <div class="item" data-aos="fade-left">
                         <img src="/images/img-mall.png" alt="">
                         <div class="item-text">
                             <h4>Project D</h4>
@@ -463,7 +468,7 @@
         </div>
     </div>
 
-    <div class="sliders-index container-fluid">
+    <div class="sliders-index container-fluid" data-aos="zoom-in">
         <div class="sliders">
             <div class="slider-item">
                 <div class="slider-img">
@@ -507,7 +512,7 @@
         });
     </script>
 
-    <div class="promotions">
+    <div class="promotions" data-aos="zoom-right" data-aos-offset="0" data-aos-duration="500">
         <div class="container">
             <h5 class="subtitle">
                 Promotions
@@ -635,7 +640,7 @@
         </div>
     </div>
 
-    <div class="apps">
+    <div class="apps" data-aos="fade-up" data-aos-offset="0">
         <div class="container">
             <div class="ornament one">
                 <img src="/images/img-ornament3.png" alt="">
@@ -817,5 +822,12 @@
         </div>
     </div>
 </body>
+
+<script>
+    AOS.init({
+        offset: 150,
+        once: true,
+    });
+</script>
 
 </html>
