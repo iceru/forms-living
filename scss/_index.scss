@@ -538,9 +538,15 @@
     }
 
     h2 {
-        padding-right: 10rem;
+        padding-right: 4rem;
         margin-bottom: 2rem;
         margin-top: 10%;
+    }
+
+    @include breakpoint(largeDesktop) {
+        h2 {
+            padding-right: 5rem;
+        }
     }
 
     p {

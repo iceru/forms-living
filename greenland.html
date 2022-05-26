@@ -20,22 +20,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script type="text/javascript"
-        src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
 
 <body class="greenland">
     <div class="navbar secondary">
@@ -305,19 +304,20 @@
         </div>
         <div class="container">
             <div class="row mb-3 mb-lg-5">
-                <div class="col-12 col-lg-5">
-                    <h6>Selamat datang di Greenland.</h6>
-                    <h1>Rumah sudah jadi, istrinya kapan?</h1>
+                <div class="col-12 col-lg-6">
+                    <h6 data-aos="fade-right">Selamat datang di Greenland.</h6>
+                    <h1 data-aos="fade-right" data-aos-delay="400">Rumah sudah jadi, istrinya kapan?</h1>
                 </div>
-                <div class="col-12 col-lg-7">
+                <div class="col-12 col-lg-6 ps-lg-5" data-aos="fade-left" data-aos-delay="400">
                     <p class="header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim
-                        interdum neque vel euismod. </p>
+                        interdum neque vel euismod. Nam ac nisl eu ex fermentum molestie et nec mi. Donec et suscipit
+                        metus, ut pharetra leo. </p>
 
                     <button type="button" class="btn btn-primary d-none d-lg-block">Learn More</button>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 header-bottom" data-aos="fade-up" data-aos-delay="600">
                     <div class="search-bar d-none d-lg-block">
                         <div class="row align-items-center">
                             <div class="col">
@@ -429,7 +429,7 @@
             </h2>
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <div class="item">
+                    <div class="item" data-aos="fade-right">
                         <img src="/images/img-cluster-large1.png" alt="">
                         <div class="item-text">
                             <h4>Green East</h4>
@@ -440,7 +440,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="item">
+                    <div class="item" data-aos="fade-left">
                         <img src="/images/img-cluster-large2.png" alt="">
                         <div class="item-text">
                             <h4>Green West</h4>
@@ -451,7 +451,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="item">
+                    <div class="item" data-aos="fade-right">
                         <img src="/images/img-cluster-large3.png" alt="">
                         <div class="item-text">
                             <h4>The Icon</h4>
@@ -462,7 +462,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="item">
+                    <div class="item" data-aos="fade-left">
                         <img src="/images/img-cluster-large4.png" alt="">
                         <div class="item-text">
                             <h4>The Mainroad</h4>
@@ -472,14 +472,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center" data-aos="fade-up">
                     <button type="button" class="btn btn-primary">Tampilkan Semua</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="facilities">
+    <div class="facilities" data-aos="fade-down">
         <div class="container-fluid left-side">
             <h5 class="subtitle">Facilities
             </h5>
@@ -563,7 +563,7 @@
             <div class="testimoni-items">
                 <div class="item-slider">
                     <div class="row">
-                        <div class="col-12 col-lg-6 pe-0 d-none d-lg-block">
+                        <div class="col-12 col-lg-6 pe-0 d-none d-lg-block" data-aos="fade-right">
                             <div class="image-sliders">
                                 <div class="image-item">
                                     <img src="/images/img-testimonial.png" class="w-100" alt="">
@@ -581,7 +581,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 right-side">
+                        <div class="col-12 col-lg-6 right-side" data-aos="fade-left">
                             <div class="testimoni-sliders">
                                 <div class="item">
                                     <div class="quotes-icon">
@@ -662,7 +662,7 @@
         });
     </script>
 
-    <div class="features">
+    <div class="features" data-aos="zoom-in-right">
         <div class="container">
             <h5 class="subtitle">Features
             </h5>
@@ -709,7 +709,7 @@
         </div>
     </div>
 
-    <div class="promotions">
+    <div class="promotions" data-aos="zoom-in-left">
         <div class="container">
             <h5 class="subtitle">
                 Promotions
@@ -840,7 +840,7 @@
     <div class="excellence">
         <div class="container-fluid px-0">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-right">
                     <div class="image-container left-text">
                         <img src="/images/img-home-section2.png" alt="">
                         <div class="text-blur-bg">
@@ -852,7 +852,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-left">
                     <div class="image-container">
                         <img src="/images/img-home-section3.png" alt="">
                         <div class="item-text">
@@ -866,7 +866,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12" data-aos="fade-right">
                         <div class="image-container left-text">
                             <img src="/images/img-home-section4.png" alt="">
                             <div class="text-blur-bg">
@@ -884,7 +884,7 @@
         </div>
     </div>
 
-    <div class="locations">
+    <div class="locations" data-aos="fade-up">
         <div class="container-fluid left-side">
             <h5 class="subtitle">Locations
             </h5>
@@ -995,7 +995,7 @@
         </div>
     </div>
 
-    <div class="apps">
+    <div class="apps" data-aos="fade-down">
         <div class="container">
             <div class="ornament one">
                 <img src="/images/img-ornament3.png" alt="">
@@ -1180,5 +1180,12 @@
         </div>
     </div>
 </body>
+
+<script>
+    AOS.init({
+        offset: 150,
+        once: true,
+    });
+</script>
 
 </html>

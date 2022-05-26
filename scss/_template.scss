@@ -4,6 +4,20 @@
     &.secondary {
         background-color: $secondary;
 
+        .logo {
+            img {
+                max-width: 150px;
+            }
+        }
+
+        @include breakpoint(largeDesktop) {
+            .logo {
+                img {
+                    max-width: 200px;
+                }
+            }
+        }
+
         .menu .dropdown-toggle.show {
             color: white;
         }
@@ -21,6 +35,7 @@
 
     .container {
         padding: 0;
+        flex-wrap: nowrap;
     }
 
     .menu {
@@ -33,6 +48,7 @@
             >li {
                 padding: .5rem 1rem;
                 color: $grey-light;
+                font-size: 14px;
 
                 @include breakpoint(largeDesktop) {
                     font-size: 18px;
@@ -114,13 +130,14 @@
         align-items: center;
 
         .btn {
-            margin-right: 2rem;
+            margin-right: 1rem;
             padding: 1rem 1.5rem;
             font-size: 16px;
         }
 
         @include breakpoint(largeDesktop) {
             .btn {
+                margin-right: 2rem;
                 font-size: 20px;
             }
         }
