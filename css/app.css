@@ -34,7 +34,7 @@ h6 {
 }
 
 h1 {
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 @media (min-width: 1400px) {
@@ -1813,6 +1813,7 @@ h1 {
 
 .features .feature {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .features .feature p {
@@ -1831,12 +1832,6 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media (max-width: 576px) {
-  .features .feature {
-    margin-bottom: 3rem;
-  }
 }
 
 .hunian .title {
@@ -2191,6 +2186,12 @@ h1 {
   position: relative;
 }
 
+.excellence .image-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .excellence .image-container .text-blur-bg {
   width: 50%;
   bottom: 4rem;
@@ -2199,13 +2200,7 @@ h1 {
 
 @media (min-width: 1400px) {
   .excellence .image-container .text-blur-bg {
-    width: 32%;
-  }
-}
-
-@media (max-width: 992px) {
-  .excellence .image-container .text-blur-bg {
-    width: 70%;
+    width: 42%;
   }
 }
 
@@ -2215,10 +2210,20 @@ h1 {
 
 .excellence .image-container .text-blur-bg h1 {
   margin-bottom: 22px;
+  font-size: 48px;
 }
 
 .excellence .image-container .text-blur-bg p {
   margin-bottom: 2.5rem;
+}
+
+@media (max-width: 992px) {
+  .excellence .image-container .text-blur-bg {
+    width: 70%;
+  }
+  .excellence .image-container .text-blur-bg h1 {
+    font-size: 32px;
+  }
 }
 
 .excellence .image-container.left-text .text-blur-bg {
@@ -2791,6 +2796,12 @@ h1 {
   position: relative;
 }
 
+@media (max-width: 576px) {
+  .detail-cluster .content {
+    padding-bottom: 4rem;
+  }
+}
+
 .detail-cluster .content-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2894,6 +2905,25 @@ h1 {
 
 .spesification .img-denah {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.spesification .img-denah img {
+  width: 100%;
+}
+
+@media (min-width: 1400px) {
+  .spesification .img-denah img {
+    width: 80%;
+  }
 }
 
 .spesification .spec-table {

@@ -187,8 +187,10 @@
 }
 
 .features {
+
     .feature {
         text-align: center;
+        margin-bottom: 3rem;
 
         p {
             color: $grey-light;
@@ -204,10 +206,6 @@
 
         .more {
             justify-content: center;
-        }
-
-        @include breakpoint(mobileonly) {
-            margin-bottom: 3rem;
         }
     }
 }
@@ -553,17 +551,18 @@
     .image-container {
         position: relative;
 
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
         .text-blur-bg {
             width: 50%;
             bottom: 4rem;
             right: 4rem;
 
             @include breakpoint(largeDesktop) {
-                width: 32%;
-            }
-
-            @include breakpoint(untilTablet) {
-                width: 70%;
+                width: 42%;
             }
 
             &:before {
@@ -572,11 +571,21 @@
 
             h1 {
                 margin-bottom: 22px;
+                font-size: 48px;
             }
 
             p {
                 margin-bottom: 2.5rem;
             }
+
+            @include breakpoint(untilTablet) {
+                width: 70%;
+
+                h1 {
+                    font-size: 32px;
+                }
+            }
+
 
         }
 

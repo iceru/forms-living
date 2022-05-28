@@ -337,6 +337,10 @@
         border-radius: 32px 32px 0 0;
         background-color: white;
         position: relative;
+
+        @include breakpoint(mobileonly) {
+            padding-bottom: 4rem;
+        }
     }
 
     .content-footer {
@@ -420,6 +424,19 @@
 .spesification {
     .img-denah {
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+
+        @include breakpoint(largeDesktop) {
+            img {
+                width: 80%;
+            }
+        }
     }
 
     .spec-table {
