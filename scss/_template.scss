@@ -4,6 +4,20 @@
     &.secondary {
         background-color: $secondary;
 
+        .logo {
+            img {
+                max-width: 150px;
+            }
+        }
+
+        @include breakpoint(largeDesktop) {
+            .logo {
+                img {
+                    max-width: 200px;
+                }
+            }
+        }
+
         .menu .dropdown-toggle.show {
             color: white;
         }
@@ -20,7 +34,8 @@
     }
 
     .container {
-        padding-bottom: 0;
+        padding: 0;
+        flex-wrap: nowrap;
     }
 
     .menu {
@@ -31,9 +46,14 @@
             padding: 0;
 
             >li {
-                padding: .5rem 1.5rem;
+                padding: .5rem 1rem;
                 color: $grey-light;
-                font-size: 18px;
+                font-size: 14px;
+
+                @include breakpoint(largeDesktop) {
+                    font-size: 18px;
+                    padding: .5rem 1.5rem;
+                }
 
                 &.active,
                 &:hover,
@@ -50,16 +70,17 @@
         }
 
         .dropdown-menu {
-            padding: 1rem 3rem;
+            padding: 1rem;
             top: 4rem;
             box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
             border: none;
-            left: -23vw;
-            min-width: 80vw;
+            left: -25vw;
+            width: 90vw;
             justify-content: center;
 
             @include breakpoint(largeDesktop) {
-                left: -25vw;
+                padding: 1rem 3rem;
+                left: -27vw;
             }
 
             &.show {
@@ -67,8 +88,10 @@
             }
 
             >li {
+                width: 100%;
+
                 a {
-                    padding: 1rem 2.25rem;
+                    padding: 1rem 2rem;
                     text-align: center;
 
                     @include breakpoint(largeDesktop) {
@@ -77,6 +100,7 @@
 
                     img {
                         filter: grayscale(100%);
+                        width: 100%;
                     }
 
                     &:hover {
@@ -106,8 +130,16 @@
         align-items: center;
 
         .btn {
-            margin-right: 2.5rem;
+            margin-right: 1rem;
             padding: 1rem 1.5rem;
+            font-size: 16px;
+        }
+
+        @include breakpoint(largeDesktop) {
+            .btn {
+                margin-right: 2rem;
+                font-size: 20px;
+            }
         }
     }
 
@@ -118,13 +150,20 @@
         z-index: 3;
     }
 
-    @include breakpoint(mobileonly) {
+    .icon-burger {
+        cursor: pointer;
+        display: none;
 
-        .logo {
-            img {
-                max-width: 72px;
-            }
+        img {
+            width: 40px;
+            height: 40px;
+            padding: .5rem;
+            border-radius: 8px;
+            border: 1px solid $grey-light;
         }
+    }
+
+    @include breakpoint(untilTablet) {
 
         &.secondary {
             .logo {
@@ -133,6 +172,10 @@
                     object-fit: contain;
                 }
             }
+
+            .icon-burger img {
+                filter: brightness(0) invert(1);
+            }
         }
 
         .menu,
@@ -140,9 +183,83 @@
             display: none;
         }
 
+        .icon-burger {
+
+            display: block;
+            position: relative;
+            z-index: 4;
+        }
+    }
+
+    @include breakpoint(mobileonly) {
+        .container {
+            padding: 0 1.5rem;
+        }
+
+        .logo {
+            img {
+                max-width: 72px;
+            }
+        }
+
         .icon-bell,
         .ic-mobile {
             display: block;
+        }
+
+        .icon-burger {
+            display: none;
+        }
+
+    }
+}
+
+.offcanvas.sidebar {
+    &.secondary {
+        background-color: $secondary;
+        color: white;
+
+        .btn-close {
+            padding: .5rem;
+            border-radius: 50%;
+            background-color: white;
+            opacity: 1;
+        }
+    }
+
+    .offcanvas-header {
+        justify-content: end;
+        padding: 2rem;
+    }
+
+    .menu {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                padding: 1rem;
+
+                .dropdown-item {
+                    text-align: center;
+
+                    img {
+                        margin-bottom: .5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .action {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+
+        .btn {
+            margin-right: 1rem;
         }
     }
 }
@@ -157,7 +274,7 @@
     z-index: 20;
     box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
 
-    @include breakpoint(laptop) {
+    @include breakpoint(tablet) {
         display: none;
     }
 
