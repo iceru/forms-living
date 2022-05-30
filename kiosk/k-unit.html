@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS Living</title>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.2/font/bootstrap-icons.min.css"
+        integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/app.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="kiosk">
+    <div class="sidebar">
+        <div class="logo">
+            <img src="/images/kiosk/logo-forms-brown.svg" alt="">
+        </div>
+        <div class="items">
+            <div class="item active">
+                <small>Tipe</small>
+                <div class="big-text">150</div>
+            </div>
+            <div class="item">
+                <small>Tipe</small>
+                <div class="big-text">145</div>
+            </div>
+            <div class="item">
+                <small>Tipe</small>
+                <div class="big-text">130</div>
+            </div>
+            <div class="item">
+                <small>Tipe</small>
+                <div class="big-text">80</div>
+            </div>
+            <div class="item">
+                <small>Tipe</small>
+                <div class="big-text">75</div>
+            </div>
+            <div class="item">
+                <small>Tipe</small>
+                <div class="big-text">60</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="kiosk-content">
+        <div class="categories">
+            <div class="container-fluid k-unit">
+                <div class="header-detail">
+                    <div class="sliders">
+                        <div class="item">
+                            <div class="img-sliders">
+                                <img src="/images/img-cluster-large3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-sliders">
+                                <img src="/images/img-cluster-large1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                        $('.header-detail .sliders').slick({
+                            arrows: false
+                        })
+                    });
+                </script>
+                <div class="content">
+                    <div class="unit-desc">
+                        <div>
+                            <h3>The Mainroad Cluster</h3>
+                            <h4>Type: 150</p>
+                        </div>
+                        <div class="text-end desktop-only">
+                            <p>Start from</p>
+                            <h3 class="mb-0">975 jt</h3>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="d-flex">
+                                <div class="small-info me-3">
+                                    <img src="/images/ic_bedroom.png" alt=""> 2 Kamar Tidur
+                                </div>
+                                <div class="small-info">
+                                    <img src="/images/ic_bathroom.png" alt=""> 1 Kamar Mandi
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spesification">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="denah-tab" data-bs-toggle="tab"
+                                    data-bs-target="#denah" type="button" role="tab" aria-controls="denah"
+                                    aria-selected="true">Denah</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="spesifikasi-tab" data-bs-toggle="tab"
+                                    data-bs-target="#spesifikasi" type="button" role="tab" aria-controls="spesifikasi"
+                                    aria-selected="false">Spesifikasi
+                                    Umum</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="denah" role="tabpanel"
+                                aria-labelledby="denah-tab">
+                                <div class="denah-sliders mt-4">
+                                    <div class="img-denah">
+                                        <img src="/images/img-denah.png" alt="">
+                                    </div>
+                                    <div class="img-denah">
+                                        <img src="/images/img-greenland.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $('.denah-sliders').slick({
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                    arrows: true,
+                                    dots: true,
+                                    fade: true,
+                                });
+                            </script>
+                            <div class="tab-pane fade" id="spesifikasi" role="tabpanel"
+                                aria-labelledby="spesifikasi-tab">
+                                <div class="spec-table">
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td>Pondasi</td>
+                                                <td>Batu kali, footplate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Struktur</td>
+                                                <td>Beton bertulang</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dinding luar</td>
+                                                <td>Pasangan bata finishing cat/woodplank/batu alam</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dinding dalam</td>
+                                                <td>Pasangan bata finishing cat</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dinding kamar mandi</td>
+                                                <td>Granitile 60x60</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rangka atap</td>
+                                                <td>Galvalum</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Penutup atap</td>
+                                                <td>Genteng flat beton </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Plafon Dalam</td>
+                                                <td>Gypsum</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Plafon Luar</td>
+                                                <td>Fiber Semen</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lantai Ruang Utama</td>
+                                                <td>Granitile 60x60</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sanitasi Kamar Mandi</td>
+                                                <td>American Standart</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-groups-kiosk">
+                        <button type="button" class="btn btn-grey">Kembali</button>
+                        <button type="button" class="btn btn-primary">Miliki Unit Ini</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
