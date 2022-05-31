@@ -4160,11 +4160,17 @@ h1 {
   z-index: 1;
 }
 
+.kiosk .categories {
+  max-height: 92vh;
+  overflow: auto;
+}
+
 .kiosk .categories .container-fluid {
   padding: 2rem;
 }
 
-.kiosk .categories .container-fluid > h3 {
+.kiosk .categories .container-fluid > h3,
+.kiosk .categories .container-fluid .page-title {
   text-align: center;
   margin: 3.5rem 0;
   font-size: 36px;
@@ -4503,6 +4509,228 @@ h1 {
   background-color: black !important;
 }
 
+.kiosk .card-shadow {
+  padding: 40px 32px;
+  border-radius: 20px;
+  font-size: 24px;
+}
+
+.kiosk .form-check {
+  padding-left: 2.5rem;
+}
+
+.kiosk .form-check .form-check-label {
+  font-size: 24px;
+}
+
+.kiosk .form-check .form-check-input {
+  border-width: 3px;
+}
+
+.kiosk .form-check .form-check-input:checked:after {
+  width: 12px;
+  height: 12px;
+}
+
+.kiosk .mod-type .type-image img {
+  width: 100%;
+  border-radius: 20px;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.kiosk .mod-type .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #b8babc;
+}
+
+.kiosk .mod-type .items .type-item:not(:last-child) {
+  margin-right: 115px;
+}
+
+.kiosk .mod-type .items .type-item p {
+  font-size: 18px;
+  color: #b8babc;
+}
+
+.kiosk .mod-type .items .type-item h5 {
+  font-size: 24px;
+}
+
+.kiosk .mod-items .item img {
+  width: 100px;
+  height: 100px;
+}
+
+.kiosk .mod-items .item p {
+  margin-bottom: .5rem;
+  font-size: 18px;
+}
+
+.kiosk .mod-items .item h5 {
+  font-size: 24px;
+}
+
+.kiosk .mod-items .item .btn {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.kiosk .simulation-price .form-group .label-text {
+  font-size: 24px;
+}
+
+.kiosk .simulation-price .card-body {
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.kiosk .simulation-price .card-body .form-check:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.kiosk .simulation-price .btn-primary {
+  padding: 32px 66px;
+}
+
+.kiosk .simulation-price .price-total {
+  margin-bottom: 2rem;
+}
+
+.kiosk .simulation-price .price-total p {
+  font-size: 24px;
+}
+
+.kiosk .simulation-price .price-total h5 {
+  font-size: 36px;
+}
+
+.kiosk .simulation-price .snk {
+  text-align: center;
+  font-size: 24px;
+}
+
+.kiosk .no-modification img {
+  width: 100%;
+}
+
+.kiosk .totals .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.kiosk .totals .item p {
+  font-size: 24px;
+  color: #b8babc;
+}
+
+.kiosk .totals .item h5 {
+  font-size: 36px;
+}
+
+.kiosk .form-order input,
+.kiosk .form-order select,
+.kiosk .form-order .btn-form {
+  padding: 24px 36px;
+  font-size: 24px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kiosk .form-order input::-webkit-input-placeholder,
+.kiosk .form-order select::-webkit-input-placeholder,
+.kiosk .form-order .btn-form::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b8babc;
+  opacity: 1;
+  /* Firefox */
+}
+
+.kiosk .form-order input:-ms-input-placeholder,
+.kiosk .form-order select:-ms-input-placeholder,
+.kiosk .form-order .btn-form:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b8babc;
+  opacity: 1;
+  /* Firefox */
+}
+
+.kiosk .form-order input::-ms-input-placeholder,
+.kiosk .form-order select::-ms-input-placeholder,
+.kiosk .form-order .btn-form::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b8babc;
+  opacity: 1;
+  /* Firefox */
+}
+
+.kiosk .form-order input::placeholder,
+.kiosk .form-order select::placeholder,
+.kiosk .form-order .btn-form::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b8babc;
+  opacity: 1;
+  /* Firefox */
+}
+
+.kiosk .form-order input:-ms-input-placeholder,
+.kiosk .form-order select:-ms-input-placeholder,
+.kiosk .form-order .btn-form:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b8babc;
+}
+
+.kiosk .form-order input::-ms-input-placeholder,
+.kiosk .form-order select::-ms-input-placeholder,
+.kiosk .form-order .btn-form::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #b8babc;
+}
+
+.kiosk .form-order .promo-text img {
+  width: 36px;
+  height: 36px;
+  margin-right: 30px;
+}
+
+.kiosk .modal.bottomsheet .page-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 48px;
+}
+
+.kiosk .modal.bottomsheet .modal-dialog {
+  position: absolute;
+  bottom: -1rem;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0;
+  min-width: 100vw;
+}
+
+.kiosk .modal.bottomsheet .modal-dialog .modal-content {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  min-height: 50vh;
+}
+
 .kiosk .btn-groups-kiosk {
   width: 100%;
   display: -ms-grid;
@@ -4511,6 +4739,9 @@ h1 {
       grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-top: 4rem;
+  position: fixed;
+  width: 74%;
+  bottom: 2rem;
 }
 
 .kiosk .btn-groups-kiosk .btn {
