@@ -3951,6 +3951,178 @@ h1 {
   display: flex;
 }
 
+.kiosk .splash-screen {
+  height: 100vh;
+  width: 100vw;
+}
+
+.kiosk .splash-screen.full-width .header-ss::before {
+  height: 285px;
+}
+
+.kiosk .splash-screen.full-width .image-sliders .image img {
+  height: 75vh;
+}
+
+.kiosk .splash-screen.full-width .content {
+  height: 25vh;
+  padding: 2rem;
+}
+
+.kiosk .splash-screen .header-ss {
+  position: relative;
+}
+
+.kiosk .splash-screen .header-ss::before {
+  content: '';
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#FFFFFF));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  width: 100%;
+  height: 721px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.kiosk .splash-screen .logo {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 120px;
+  z-index: 4;
+}
+
+.kiosk .splash-screen .image-sliders {
+  position: relative;
+}
+
+.kiosk .splash-screen .image-sliders img {
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.kiosk .splash-screen .content {
+  height: 30vh;
+  padding: 3rem 120px;
+  width: 100%;
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots {
+  bottom: 18px;
+  left: 1.5rem;
+  text-align: left;
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots li {
+  width: 8px;
+  height: 8px;
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots li button {
+  height: 8px;
+  width: 8px;
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots li button::before {
+  background-color: rgba(255, 255, 255, 0.6);
+  content: '';
+  opacity: 1;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots li.slick-active {
+  width: 32px;
+  height: 8px;
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots li.slick-active button {
+  width: 32px;
+  height: 8px;
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots li.slick-active button::before {
+  background-color: white;
+  opacity: 1;
+  width: 32px;
+  height: 8px;
+  border-radius: 8px;
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots {
+  text-align: center;
+  bottom: -8rem;
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots li {
+  width: 12px;
+  height: 12px;
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots li button {
+  width: 12px;
+  height: 12px;
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots li button::before {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(184, 186, 188, 0.6);
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots li.slick-active {
+  width: 48px;
+  height: 12px;
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots li.slick-active button {
+  width: 48px;
+  height: 12px;
+}
+
+.kiosk .splash-screen .content .content-sliders .slick-dots li.slick-active button::before {
+  width: 48px;
+  height: 12px;
+  background-color: #58595b !important;
+}
+
+.kiosk .splash-screen .content .item {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.kiosk .splash-screen .content .item h1 {
+  font-size: 64px;
+  margin-bottom: 40px;
+  line-height: 86px;
+}
+
+.kiosk .splash-screen .content .item h4 {
+  font-size: 32px;
+  color: #b8babc;
+  font-weight: 300;
+  line-height: 56px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.kiosk .loading {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .kiosk .sidebar {
   min-height: 100vh;
   background-color: #F2F2F2;
@@ -4015,6 +4187,10 @@ h1 {
   width: 80%;
 }
 
+.kiosk .kiosk-content.full-height .categories {
+  min-height: 100vh !important;
+}
+
 .kiosk .kiosk-content .btn-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4028,6 +4204,7 @@ h1 {
 .kiosk .kiosk-content .btn-header .btn {
   font-weight: 400;
   font-size: 24px;
+  padding: 24px 36px;
 }
 
 .kiosk .kiosk-content .btn-header .btn img {
@@ -4043,6 +4220,12 @@ h1 {
 }
 
 .kiosk .kiosk-content .btn-footer .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100px;
   width: 380px;
   font-size: 24px;
@@ -4077,8 +4260,8 @@ h1 {
 }
 
 .kiosk .steps-kiosk .step.done {
-  background: #a47449;
-  border-color: #a47449;
+  background: linear-gradient(299.53deg, #a47449 54.82%, #C58A56 104.36%);
+  border-color: transparent;
   color: white;
 }
 
@@ -4404,7 +4587,7 @@ h1 {
 
 .kiosk .k-unit .content {
   margin: 0 -2rem;
-  padding: 2rem;
+  padding: 64px 38px;
   margin-top: -4rem;
   border-radius: 32px 32px 0 0;
   position: relative;
@@ -4708,6 +4891,85 @@ h1 {
   margin-right: 30px;
 }
 
+.kiosk .summary h6,
+.kiosk .summary p {
+  font-size: 24px;
+}
+
+.kiosk .summary .first p {
+  color: #b8babc;
+}
+
+.kiosk .summary .promo p {
+  font-size: 20px;
+}
+
+.kiosk .checkbox {
+  padding-left: 3rem;
+}
+
+.kiosk .checkbox .form-check-input {
+  width: 32px;
+  height: 32px;
+  margin-left: -3rem;
+}
+
+.kiosk .congratulation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+}
+
+.kiosk .congratulation .logo img {
+  height: auto;
+  width: 316px;
+}
+
+.kiosk .congratulation .logo-check {
+  margin-bottom: 124px;
+}
+
+.kiosk .congratulation .logo-check img {
+  width: 200px;
+  height: 200px;
+}
+
+.kiosk .congratulation h1 {
+  font-size: 48px;
+  margin-bottom: 36px;
+}
+
+.kiosk .congratulation p {
+  margin: 0 auto;
+}
+
+.kiosk .modal .modal-dialog {
+  top: 50%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+  min-width: 90vw;
+}
+
+.kiosk .modal .mod-items .item p {
+  font-size: 18px;
+}
+
+.kiosk .modal .mod-items .item h6 {
+  font-size: 24px;
+}
+
 .kiosk .modal.bottomsheet .page-title {
   text-align: center;
   font-size: 36px;
@@ -4729,6 +4991,57 @@ h1 {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   min-height: 50vh;
+}
+
+.kiosk .modal.promo .promo-title {
+  font-size: 36px;
+}
+
+.kiosk .modal.promo .promo-input input,
+.kiosk .modal.promo .promo-input .btn {
+  font-size: 24px;
+}
+
+.kiosk .modal.promo h5 {
+  font-size: 36px;
+}
+
+.kiosk .modal.promo p {
+  font-size: 20px;
+}
+
+.kiosk .modal.promo .promo-item .promo-text h6 {
+  font-size: 24px;
+}
+
+.kiosk .modal.promo .promo-item .promo-icon img {
+  width: 36px;
+  height: auto;
+}
+
+.kiosk .modal.promo .btn-primary {
+  padding: 32px 77px;
+  font-size: 24px;
+}
+
+.kiosk .modal .no-promo img {
+  margin-bottom: 2rem;
+  width: 80%;
+}
+
+.kiosk .modal .disclaimer .modal-title {
+  font-size: 36px;
+}
+
+.kiosk .modal .disclaimer p,
+.kiosk .modal .disclaimer li {
+  font-size: 20px;
+}
+
+.kiosk .modal .disclaimer .btn {
+  width: 100%;
+  padding: 2rem;
+  font-size: 24px;
 }
 
 .kiosk .btn-groups-kiosk {

@@ -43,67 +43,55 @@
             <div class="step done">2</div>
             <div class="step done">3</div>
             <div class="step done">4</div>
-            <div class="step active">5</div>
-            <div class="step">6</div>
-            <div class="step">7</div>
-            <div class="step">8</div>
+            <div class="step done">5</div>
+            <div class="step done">6</div>
+            <div class="step done">7</div>
+            <div class="step done">8</div>
         </div>
     </div>
 
     <div class="kiosk-content">
         <div class="categories">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="mod-type">
-                            <div class="type-image">
-                                <img src="/images/img-cluster.png" alt="">
-                            </div>
-                            <div class="items">
-                                <div class="type-item">
-                                    <p>Type</p>
-                                    <h5>150</h5>
-                                </div>
-                                <div class="type-item">
-                                    <p>Blok</p>
-                                    <h5>A2</h5>
-                                </div>
-                                <div class="type-item">
-                                    <p>Cluster</p>
-                                    <h5>The Mainroad</h5>
-                                </div>
-                                <div class="type-item">
-                                    <p>Start from</p>
-                                    <h5>Rp. 975,000,000</h5>
-                                </div>
+            <div class="container-fluid k-unit">
+                <div class="header-detail">
+                    <div class="sliders">
+                        <div class="item">
+                            <div class="img-sliders">
+                                <img src="/images/img-cluster-large3.png" alt="">
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 ">
-                        <h3 class="page-title mt-0">Metode Pembayaran</h3>
-                        <div class="card-shadow">
-                            <div class="form-check form-radio">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="kpr" id="kpr"
-                                        value="checkedValue" checked>
-                                    KPR Bank
-                                </label>
-                            </div>
-                        </div>
-                        <div class="card-shadow">
-                            <div class="form-check form-radio">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="kpr" id="kpr"
-                                        value="checkedValue">
-                                    Cicilan Inhouse Developer
-                                </label>
+                        <div class="item">
+                            <div class="img-sliders">
+                                <img src="/images/img-cluster-large1.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="btn-groups-kiosk">
-                    <a href="/kiosk/k-simulation-modification.html" type="button" class="btn btn-grey">Kembali</a>
-                    <a href="/kiosk/k-simulation-price.html" type="button" class="btn btn-primary">Lanjutkan</a>
+
+                <script>
+                    $(document).ready(function () {
+                        $('.header-detail .sliders').slick({
+                            arrows: false
+                        })
+                    });
+                </script>
+                <div class="content congratulation">
+                    <div class="logo">
+                        <img src="/images/kiosk/logo-tidar.svg" alt="Greenland at Tidar">
+                    </div>
+                    <div class="logo-check">
+                        <img src="/images/kiosk/ic-success.svg" alt="">
+                    </div>
+                    <h1>Terkirim!</h1>
+                    <p class="light-grey-color">
+                        Invoice biaya tanda jadi sudah dikirim ke alamat email Anda, Silakan proses pembayaran dan
+                        konfirmasi
+                        melalui email atau whatsapp.
+                    </p>
+                </div>
+                <div class="btn-groups-kiosk d-flex">
+                    <a href="/kiosk/k-congratulation.html" type="button" class="btn btn-primary w-100">Kembali ke
+                        Beranda</a>
                 </div>
             </div>
         </div>
