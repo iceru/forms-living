@@ -335,6 +335,115 @@
         }
     }
 
+    .select-unit {
+        .container-fluid {
+            padding: 0 !important;
+            min-height: 95vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .control {
+                position: absolute;
+                bottom: 8rem;
+                right: 3rem;
+
+                .zoom {
+                    background-color: rgba($color: #000000, $alpha: 0.3);
+                    border-radius: 10px;
+                    padding: 1rem;
+                }
+
+                .in {
+                    margin-bottom: .75rem;
+                }
+            }
+
+            .bg-black {
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                display: none;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                position: absolute;
+
+                &.active {
+                    display: block;
+                }
+            }
+
+            .popup {
+                display: none;
+                height: 85%;
+                width: 35%;
+                position: absolute;
+                left: 2rem;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: white;
+                border-radius: 20px;
+                z-index: 2;
+
+                .popup-close {
+                    position: absolute;
+                    background-color: white;
+                    top: -2rem;
+                    right: 0;
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+
+                    img {
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+
+                .popup-image {
+                    img {
+                        height: 147px;
+                        object-fit: cover;
+                        width: 100%;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                    }
+                }
+
+                &.active {
+                    display: block;
+                }
+
+                .popup-content {
+                    padding: 1.5rem 40px;
+
+                    .popup-title {
+                        font-size: 20px;
+                        font-weight: bold;
+                        text-align: center;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .text-left,
+                    .text-right {
+                        margin-bottom: 1rem;
+                    }
+
+                    .text-left {
+                        color: $grey-light;
+                    }
+                }
+            }
+        }
+    }
+
     .categories {
         max-height: 92vh;
         overflow: auto;
