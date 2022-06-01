@@ -352,11 +352,16 @@
                 .zoom {
                     background-color: rgba($color: #000000, $alpha: 0.3);
                     border-radius: 10px;
-                    padding: 1rem;
+                    padding: 30px;
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
                 }
 
                 .in {
-                    margin-bottom: .75rem;
+                    margin-bottom: 1.5rem;
                 }
             }
 
@@ -364,9 +369,9 @@
                 background-color: rgba($color: #000000, $alpha: 0.5);
                 width: 100%;
                 height: 100%;
-                border-radius: 20px;
                 display: none;
                 z-index: 1;
+                backdrop-filter: blur(10px);
                 top: 0;
                 left: 0;
                 position: absolute;
@@ -378,12 +383,12 @@
 
             .popup {
                 display: none;
-                height: 85%;
-                width: 35%;
+                height: 800px;
+                width: 450px;
                 position: absolute;
-                left: 2rem;
                 top: 50%;
-                transform: translateY(-50%);
+                left: 50%;
+                transform: translate(-50%, -50%);
                 background-color: white;
                 border-radius: 20px;
                 z-index: 2;
@@ -391,10 +396,10 @@
                 .popup-close {
                     position: absolute;
                     background-color: white;
-                    top: -2rem;
+                    top: -6rem;
                     right: 0;
-                    width: 20px;
-                    height: 20px;
+                    width: 64px;
+                    height: 64px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -402,14 +407,14 @@
                     cursor: pointer;
 
                     img {
-                        width: 8px;
-                        height: 8px;
+                        width: 18px;
+                        height: 18px;
                     }
                 }
 
                 .popup-image {
                     img {
-                        height: 147px;
+                        height: 214px;
                         object-fit: cover;
                         width: 100%;
                         border-top-left-radius: 20px;
@@ -423,9 +428,10 @@
 
                 .popup-content {
                     padding: 1.5rem 40px;
+                    font-size: 24px;
 
                     .popup-title {
-                        font-size: 20px;
+                        font-size: 36px;
                         font-weight: bold;
                         text-align: center;
                         margin-bottom: 1.5rem;
@@ -438,6 +444,12 @@
 
                     .text-left {
                         color: $grey-light;
+                    }
+
+                    .btn {
+                        font-size: 24px;
+                        width: 100%;
+                        padding: 1.5rem;
                     }
                 }
             }
