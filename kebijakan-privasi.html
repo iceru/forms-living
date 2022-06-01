@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS Living</title>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.2/font/bootstrap-icons.min.css"
+        integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="index">
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/images/logo-forms-living1.png" alt="FORMS Living">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="active">
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Perumahan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="/greenland.html">
+                                    <div>
+                                        <img src="/images/logo-tidar-green.png" alt="">
+                                        <p>Greenland</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project2b.png" alt="">
+                                        <p>Project B</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project3b.png" alt="">
+                                        <p>Project C</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project4.png" alt="">
+                                        <p>Project D</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div>
+                                        <img src="/images/logo-project5.png" alt="">
+                                        <p>Project E</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Hotel
+                    </li>
+                    <li>Mall</li>
+                    <li>
+                        <a href="">About Forms</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="action">
+                <a href="/login.html" type="button" class="btn btn-outline-secondary">Login/Register</button>
+                    <a href="#">
+                        <img src="/images/ic-cart.png" alt="">
+                    </a>
+            </div>
+            <div class="icon-bell">
+                <img src="/images/ic-bell.png" alt="">
+            </div>
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar"
+                class="icon-burger btn p-0">
+                <img src="/images/ic-hamburger.svg" alt="">
+            </button>
+        </div>
+    </div>
+    <div class="info-page">
+        <div class="container">
+            <div class="title">
+                Privacy Policy
+            </div>
+            <div class="item">
+                <p>
+                    By using or accessing this website you signify your acknowledgment and assent to the Privacy Policy
+                    set forth below. If you do not agree to this policy, please do not use this website. FORMS can
+                    revise this policy at any time by updating this posting, and your use after such change signifies
+                    your acceptance of the changed terms. Please check these terms of use periodically for changes.
+                    <br><br>
+                    This policy is intended to help you understand how FORMS its subsidiaries and affiliates (“FORMS,”
+                    "we," or "us") collect, use and safeguard the information you provide on our website.
+                </p>
+            </div>
+            <div class="item">
+                <div class="subtitle-item">
+                    Personal Data
+                </div>
+                <p>If you browse any FORMS website, you may generally do so anonymously without providing any personal
+                    information. However, there are cases in which we may ask you for personal data. For example, we
+                    will occasionally conduct on-line surveys to better understand the needs and profile of our
+                    visitors. In addition, we may request personal information when you register to receive additional
+                    information regarding our products and services or send us a question. Even if you choose not to
+                    give information we request, you can still visit most of the FORMS website, but you may be unable to
+                    access certain options, offers, and services.</p>
+            </div>
+            <div class="item">
+                <div class="subtitle-item">
+                    Mailing List
+                </div>
+                <p>If you provide us with personal information, we may place you on a list to receive e-mail regarding
+                    product updates, special offers, important issues and new products. If you do not wish to receive
+                    e-mail updates, please contact us at the contact points specified below.</p>
+            </div>
+            <div class="item">
+                <div class="subtitle-item">
+                    Use of Personal Data
+                </div>
+                <p>Personal information provided by users may be used for marketing and promotional purposes only by
+                    FORMS and its subsidiaries and affiliates. FORMS does not rent, sell or otherwise distribute to
+                    third parties, your personal information entered on this site. While we use all reasonable efforts
+                    to safeguard the confidentiality of your information, FORMS will have no liability for disclosure of
+                    any information obtained due to errors in transmission or the unauthorized acts of third parties.
+                    FORMS also reserves the right to change or update this policy, or any other policy or practice, at
+                    anytime. Any changes or updates will be effective immediately upon posting to the FORMS site.
+                    <br><br>
+                    We may share statistical or aggregated non-personal information about our users with advertisers,
+                    business partners, sponsors and other third parties. This data is used to customize FORMS website
+                    content and advertising to deliver a better experience to our users.
+                </p>
+            </div>
+
+            <div class="item">
+                <div class="subtitle-item">
+                    Cookies and IP tracking
+                </div>
+                <p>This site may use cookies for site administration purposes. If for any reason you wish to not take
+                    advantage of cookies, you may have your browser not accept them, although this may disable or render
+                    unusable some of the features of the FORMS website.
+                    <br><br>
+                    This website also may detect and use your IP address or domain name for internal traffic monitoring
+                    and capacity purposes or to otherwise administer our website. No personal information is obtained,
+                    rather just the patterns of usage of our various users may be tracked to provide you with improved
+                    service and content based on aggregate or statistical reviews of user site traffic patterns.
+                </p>
+            </div>
+
+            <div class="item">
+                <div class="subtitle-item">
+                    Special Cases
+                </div>
+                <p>FORMS reserves the right to disclose user information in special cases, when we have reason to
+                    believe that disclosing this information is necessary to identify, contact or bring legal action
+                    against someone who may be causing injury to or interference with (either intentionally or
+                    unintentionally) our rights or property, other FORMS website users, or anyone else that could be
+                    harmed by such activities. We may disclose personal information without notice to you in response to
+                    a subpoena or when we believe in good faith that the law requires it or to respond to an emergency
+                    situation.</p>
+            </div>
+
+            <div class="item">
+                <div class="subtitle-item">
+                    Linked Sites
+                </div>
+                <p>Please be advised that our website may contain links to third-party websites. The linked sites are
+                    not under the control of FXMEDIA, and we are not responsible for the contents or privacy practices
+                    of any linked site or any link on a linked site.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <hr>
+            <div class="copyright">
+                <div class="copy-year">
+                    &#169; 2022 FORMS.Inc
+                </div>
+                <div class="links">
+                    <a href="#">Kebijakan privasi</a>
+                    <a href="#">Syarat dan Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    AOS.init({
+        offset: 150,
+        once: true,
+    });
+</script>
+
+</html>

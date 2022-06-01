@@ -3945,6 +3945,124 @@ h1 {
   border-color: #d3bba5;
 }
 
+.error {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  .error {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 85vh;
+  }
+  .error .error-image {
+    margin-bottom: 3rem;
+  }
+}
+
+.error .container {
+  padding-bottom: 2rem;
+}
+
+.error .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error .row .error-text {
+  text-align: center;
+}
+
+.error .row .error-text h1 {
+  margin-bottom: 1.5rem;
+}
+
+.error .row .error-text p {
+  color: #b8babc;
+  font-family: 'Questrial';
+  margin-bottom: 56px;
+}
+
+.error .row .error-image img {
+  padding-left: 2rem;
+}
+
+.info-page .container {
+  padding: 60px 0;
+}
+
+.info-page .container .item {
+  margin-bottom: 3rem;
+}
+
+.info-page .container .item:last-child {
+  margin-bottom: 0;
+}
+
+.info-page .container .item .subtitle-item {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: block !important;
+}
+
+.info-page .container .item p {
+  font-size: 20px;
+  color: #b8babc;
+  font-family: 'Questrial', sans-serif;
+}
+
+.info-page .container .title {
+  margin-bottom: 60px;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (min-width: 1400px) {
+  .info-page .container {
+    padding: 120px 0;
+  }
+  .info-page .container .item {
+    margin-bottom: 72px;
+  }
+  .info-page .container .title {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .info-page .container {
+    padding: 2rem 1.5rem;
+  }
+  .info-page .container .title {
+    margin-bottom: 2rem;
+    font-size: 32px;
+  }
+  .info-page .container .item {
+    margin-bottom: 1.5rem;
+  }
+  .info-page .container .item .subtitle-item {
+    font-size: 18px;
+    margin-bottom: .5rem;
+  }
+  .info-page .container .item p {
+    font-size: 1rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
