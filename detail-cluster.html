@@ -161,6 +161,94 @@
                 </div>
             </div>
 
+            <div class="gallery-popup">
+                <div class="container">
+                    <div class="icon-close">
+                        <i class="bi-x-lg"></i>
+                    </div>
+                    <div class="main-images">
+                        <div class="main-item">
+                            <img src="/images/img-cluster-large3.png" alt="">
+                        </div>
+                        <div class="main-item">
+                            <img src="/images/img-detailcluster1.png" alt="">
+                        </div>
+                        <div class="main-item">
+                            <img src="/images/img-detailcluster2.png" alt="">
+                        </div>
+                        <div class="main-item">
+                            <img src="/images/img-cluster-large3.png" alt="">
+                        </div>
+                        <div class="main-item">
+                            <img src="/images/img-detailcluster1.png" alt="">
+                        </div>
+                        <div class="main-item">
+                            <img src="/images/img-detailcluster2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="thumbnails-container">
+                        <div class="thumbnails">
+                            <div class="main-item">
+                                <img src="/images/img-cluster-large3.png" alt="">
+                            </div>
+                            <div class="main-item">
+                                <img src="/images/img-detailcluster1.png" alt="">
+                            </div>
+                            <div class="main-item">
+                                <img src="/images/img-detailcluster2.png" alt="">
+                            </div>
+                            <div class="main-item">
+                                <img src="/images/img-cluster-large3.png" alt="">
+                            </div>
+                            <div class="main-item">
+                                <img src="/images/img-detailcluster1.png" alt="">
+                            </div>
+                            <div class="main-item">
+                                <img src="/images/img-detailcluster2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+                $(document).ready(function () {
+
+                    $('.icon-close').click(function (e) {
+                        e.preventDefault();
+                        $('.gallery-popup').removeClass('active');
+                        $('.main-images').slick('destroy');
+                        $('.thumbnails').slick('destroy');
+
+                    });
+                    $('.see-more').click(function (e) {
+                        e.preventDefault();
+                        $('.gallery-popup').addClass('active');
+
+                        $('.main-images').slick({
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
+                            asNavFor: '.thumbnails'
+                        });
+
+                        $('.thumbnails').slick({
+                            slidesToShow: 4,
+                            arrows: true,
+                            slidesToScroll: 1,
+                            dots: false,
+                            asNavFor: '.main-images',
+                            nextArrow: ' <div class="slick-next"><img src="/images/btn-right.png"  alt=""></div>',
+                            prevArrow: ' <div class="slick-prev"><img src="/images/btn-left.png" alt=""></div>',
+                        });
+
+                    });
+
+                });
+            </script>
+
             <div class="content">
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
