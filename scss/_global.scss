@@ -121,3 +121,19 @@
         display: none;
     }
 }
+
+
+.loading {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(mobileonly) {
+        img {
+            width: 75%;
+            height: auto;
+        }
+    }
+}
