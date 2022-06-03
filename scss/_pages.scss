@@ -287,3 +287,118 @@
         }
     }
 }
+
+.error {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(mobileonly) {
+        flex-direction: column;
+        height: 85vh;
+
+        .error-image {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .container {
+        padding-bottom: 2rem;
+    }
+
+    .row {
+        align-items: center;
+
+        .error-text {
+            text-align: center;
+
+            h1 {
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                color: $grey-light;
+                font-family: 'Questrial';
+                margin-bottom: 56px;
+            }
+        }
+
+        .error-image {
+            img {
+                padding-left: 2rem;
+            }
+        }
+    }
+}
+
+.info-page {
+    .container {
+        padding: 60px 0;
+
+        .item {
+            margin-bottom: 3rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .subtitle-item {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                display: block !important;
+            }
+
+            p {
+                font-size: 20px;
+                color: $grey-light;
+                font-family: 'Questrial', sans-serif;
+            }
+        }
+
+        .title {
+            margin-bottom: 60px;
+            font-size: 48px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+
+        @include breakpoint(largeDesktop) {
+            padding: 120px 0;
+
+            .item {
+                margin-bottom: 72px;
+            }
+
+            .title {
+                margin-bottom: 120px;
+            }
+        }
+
+        @include breakpoint(mobileonly) {
+            padding: 2rem 1.5rem;
+
+            .title {
+                margin-bottom: 2rem;
+                font-size: 32px;
+            }
+
+            .item {
+                margin-bottom: 1.5rem;
+
+                .subtitle-item {
+                    font-size: 18px;
+                    margin-bottom: .5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+        }
+
+    }
+}
