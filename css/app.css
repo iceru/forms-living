@@ -214,14 +214,16 @@ h1 {
     position: absolute;
     bottom: -1rem;
     width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
     margin: 0;
+    transform: translate(0, 100px);
   }
   .modal.bottomsheet .modal-dialog .modal-content {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     min-height: 50vh;
+  }
+  .modal.bottomsheet.show .modal-dialog {
+    transform: none !important;
   }
 }
 
