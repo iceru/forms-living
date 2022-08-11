@@ -210,6 +210,16 @@ h1 {
         border-top: 0;
     }
 
+    .modal-body {
+        position: relative;
+
+        .btn-close {
+            position: absolute;
+            top: .5rem;
+            right: .5rem;
+        }
+    }
+
     .modal-title {
         text-align: center;
         margin-bottom: 2rem;

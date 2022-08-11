@@ -189,6 +189,7 @@
             border-radius: 32px 32px 0 0;
             z-index: 3;
             background-color: white;
+            padding-bottom: 7rem;
         }
 
         .right-column {
@@ -284,6 +285,28 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.filter-results {
+    .container {
+        padding: 2rem 1.5rem;
+    }
+
+    .fr-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+
+        h5 {
+            margin-bottom: 0;
+        }
+
+        .result {
+            font-size: 12px;
+            color: #B8BABC;
         }
     }
 }
@@ -400,5 +423,34 @@
 
         }
 
+    }
+}
+
+.search-header {
+    padding: 2rem 1.5rem;
+
+    h5 {
+        margin-bottom: 1rem;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+
+        .search-bar {
+            margin-right: 1rem;
+            width: 100%;
+
+            .form-control {
+                padding: .75rem 1rem;
+                font-size: 12px;
+            }
+        }
+
+        .ic-mobile {
+            padding: .5rem;
+            border: 1px solid lightgray;
+            border-radius: .5rem;
+        }
     }
 }
