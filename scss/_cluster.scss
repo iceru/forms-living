@@ -70,12 +70,11 @@
         background-color: rgba($color: #000000, $alpha: 0.5);
         width: 100%;
         height: 100%;
-        border-radius: 20px;
         display: none;
         z-index: 1;
         top: 0;
         left: 0;
-        position: absolute;
+        position: fixed;
 
         &.active {
             display: block;
@@ -86,13 +85,13 @@
         display: none;
         height: 85%;
         width: 35%;
-        position: absolute;
-        left: 2rem;
+        position: fixed;
+        left: 50%;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translate(-50%, -50%);
         background-color: white;
         border-radius: 20px;
-        z-index: 2;
+        z-index: 4;
 
         .popup-close {
             position: absolute;
@@ -110,6 +109,17 @@
             img {
                 width: 8px;
                 height: 8px;
+            }
+        }
+
+        @include breakpoint(untilTablet) {
+            width: 100vw;
+            height: 100vh;
+            left: 0;
+
+            .popup-close {
+                top: 1rem;
+                right: 1rem;
             }
         }
 
