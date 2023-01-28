@@ -115,7 +115,6 @@
         @include breakpoint(untilTablet) {
             width: 100vw;
             height: 100vh;
-            left: 0;
 
             .popup-close {
                 top: 1rem;

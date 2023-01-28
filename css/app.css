@@ -2157,7 +2157,6 @@ h1 {
   .map .popup {
     width: 100vw;
     height: 100vh;
-    left: 0;
   }
   .map .popup .popup-close {
     top: 1rem;
