@@ -208,14 +208,16 @@
                             </div>
                         </div>
 
-                        <button type="button" class="btn btn-outline-secondary">Pilih Unit</button>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-outline-secondary btn-choose">Pilih Unit</button>
+                        </div>
 
                     </div>
                 </div>
             </div>
 
             <script>
-                $('.map').click(function (e) {
+                $('.map img').click(function (e) {
                     e.preventDefault();
                     $('.popup').toggleClass('active');
                     $('.bg-black').toggleClass('active');
@@ -223,6 +225,12 @@
                 });
 
                 $('.popup-close').click(function (e) {
+                    e.preventDefault();
+                    $('.popup').removeClass('active');
+                    $('.bg-black').removeClass('active');
+                });
+
+                $('.btn-choose').click(function (e) {
                     e.preventDefault();
                     $('.popup').removeClass('active');
                     $('.bg-black').removeClass('active');

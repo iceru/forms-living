@@ -2112,7 +2112,7 @@ h1 {
   }
 }
 .map .bg-black {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
   display: none;
@@ -2120,6 +2120,8 @@ h1 {
   top: 0;
   left: 0;
   position: fixed;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 .map .bg-black.active {
   display: block;
@@ -2141,8 +2143,8 @@ h1 {
   background-color: white;
   top: -2rem;
   right: 0;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2150,8 +2152,8 @@ h1 {
   cursor: pointer;
 }
 .map .popup .popup-close img {
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
 }
 @media (max-width: 992px) {
   .map .popup {
@@ -2160,6 +2162,7 @@ h1 {
     bottom: 0;
     top: auto;
     transform: translate(-50%, 0);
+    border-radius: 20px 20px 0 0;
   }
   .map .popup .popup-close {
     top: 1rem;
